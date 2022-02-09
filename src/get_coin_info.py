@@ -28,6 +28,7 @@ title_en = f"{coin_details['title']} coin ({min_year} - {max_year})"
 title_pt = f"moeda de {coin_details['title']} ({min_year} - {max_year})"
 material = composition_dict[coin_details["composition"]["text"]]
 country = issuer_dict[coin_details["issuer"]["name"]]
+country_name = coin_details["issuer"]["name"]
 diameter = coin_details["size"]
 weight = coin_details["weight"]
 thickness = coin_details["thickness"]
@@ -40,7 +41,7 @@ print(
 CREATE
 LAST|Len|"{title_en}"
 LAST|Lpt|"{title_pt}"
-LAST|Den|"brazilian coin"
+LAST|Den|"coin from {country_name}"
 LAST|Dpt|"moeda brasileira"
 LAST|P279|Q41207
 LAST|P17|{country}{ref}
