@@ -43,6 +43,7 @@ currency_dict = {
     "CFA franc (French West Africa, 1944-1958)": "Q191511",
     "Colón (1896-date)": "Q242915",
     "Cruzeiro (1990-1993)": "Q10261896",
+    "Cruzeiro real (1993-1994)": "Q831578",
     "Dinar (1965-date)": "Q201871",
     "Dollar (1785-date)": "Q4917",
     "Euro (2002-date)": "Q4916",
