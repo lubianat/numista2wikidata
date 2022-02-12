@@ -33,7 +33,6 @@ country = issuer_dict[coin_details["issuer"]["name"]]
 country_name = coin_details["issuer"]["name"]
 diameter = coin_details["size"]
 weight = coin_details["weight"]
-thickness = coin_details["thickness"]
 ref = f'|S854|"https://en.numista.com/catalogue/type{str(coin_type_id)}.html"|S248|Q84602292'
 
 
@@ -44,7 +43,7 @@ CREATE
 LAST|Len|"{title_en}"
 LAST|Lpt|"{title_pt}"
 LAST|Den|"coin from {country_name}"
-LAST|Dpt|"moeda brasileira"
+LAST|Dpt|"tipo de moeda"
 LAST|P279|Q41207
 LAST|P17|{country}{ref}
 LAST|P580|+{min_year}-00-00T00:00:00Z/9{ref}
@@ -52,14 +51,18 @@ LAST|P582|+{max_year}-00-00T00:00:00Z/9{ref}
 LAST|P186|{material}{ref}
 LAST|P2386|{diameter}U174789{ref}
 LAST|P2067|{weight}U41803{ref}
-LAST|P2610|{thickness}U174789{ref}
 LAST|P10205|"{str(coin_type_id)}"{ref}
 LAST|P3934|{value}{currency}{ref}
 """
 )
-
 try:
     series = series_dict[coin_details["series"]]
     print(f"""LAST|P279|{series}{ref}""")
+except:
+    pass
+
+try:
+    thickness = coin_details["thickness"]
+    print(f"LAST|P2610|{thickness}U174789{ref}")
 except:
     pass
