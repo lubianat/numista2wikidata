@@ -18,7 +18,7 @@ response = requests.get(
 )
 coin_details = response.json()
 
-
+print(coin_details)
 # Extract fields of interest
 currency = currency_dict[coin_details["value"]["currency"]["full_name"]].replace(
     "Q", "U"
@@ -66,3 +66,7 @@ try:
     print(f"LAST|P2610|{thickness}U174789{ref}")
 except:
     pass
+
+
+if coin_details["type"] == "Standard circulation coin":
+    print(f"LAST|P279|Q110944598{ref}")

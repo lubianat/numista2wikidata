@@ -16,6 +16,8 @@ composition_dict = {
     "Bronze plated nickel": "Q110899391",
     "Copper-nickel": "Q649090",
     "Copper-nickel clad copper": "Q753",
+    "Copper-nickel (75% Cu, 25% Ni)": "Q110944558",
+    "Copper-nickel (75% Copper, 25% Nickel)": "Q110944558",
     "Copper plated steel": "Q110867630",
     "Silver (.900)": "Q110861802",
     "Stainless steel": "Q172587",
