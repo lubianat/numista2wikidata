@@ -7,6 +7,7 @@ series_dict = {
 
 composition_dict = {
     "Aluminium": "Q663",
+    "Aluminium (100% Aluminium)": "Q663",
     "Aluminium-bronze": "Q447546",
     "Aluminium (Al960 Mg35 Mn5)": "Q110899949",
     "Brass": "Q39782",
@@ -49,6 +50,7 @@ issuer_dict = {
     "French West Africa": "Q210682",
     "India": "Q668",
     "Italy": "Q38",
+    "Japan": "Q17",
     "Malta": "Q233",
     "Paraguay": "Q733",
     "Peru": "Q419",
@@ -93,4 +95,5 @@ currency_dict = {
     "Reichsmark (1924-1948)": "Q155009",
     "Rupee (decimalized, 1957-date)": "Q80524",
     "Tolar (1991-2006)": "Q208133",
+    "Yen (1871-date)": "Q8146",
 }

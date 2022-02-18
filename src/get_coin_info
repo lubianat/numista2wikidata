@@ -67,6 +67,5 @@ try:
 except:
     pass
 
-
 if coin_details["type"] == "Standard circulation coin":
     print(f"LAST|P279|Q110944598{ref}")
