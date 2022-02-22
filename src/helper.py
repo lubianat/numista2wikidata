@@ -1,7 +1,13 @@
 import requests
 import sys
 import requests
-from dictionaries import *
+from dictionaries.dictionaries import *
+from dictionaries.depict import *
+from dictionaries.engraver import *
+from dictionaries.currency import *
+from dictionaries.composition import *
+from dictionaries.issuer import *
+from dictionaries.language import *
 import traceback
 
 
@@ -17,7 +23,6 @@ def get_coin_statements(coin_type_id):
         headers={"Numista-API-Key": api_key},
     )
     coin_details = response.json()
-
     # Extract fields of interest
     currency = currency_dict[coin_details["value"]["currency"]["full_name"]].replace(
         "Q", "U"
@@ -33,23 +38,25 @@ def get_coin_statements(coin_type_id):
     except Exception:
         traceback.print_exc()
         text = coin_details["composition"]["text"]
-        if "Bimetallic" in text:
-
-            print(
-                f"""
+        print(
+            f"""
             CREATE
             LAST|Len|"{text}"
-            LAST|Den|"Bimetallic material used for coins"
-            LAST|P279|Q110983998{ref}"""
-            )
-
-            for key, value in composition_dict.items():
-                if key.lower() in text.lower():
-                    print(
-                        f"""
-            LAST|P527|{value}{ref}
+            LAST|Den|"metallic material used for coins"
             """
-                    )
+        )
+
+        for key, value in composition_dict.items():
+            if key.lower() in text.lower():
+                print(
+                    f"""
+        LAST|P527|{value}{ref}
+        """
+                )
+        if "Bimetallic" in text:
+            print(f"""LAST|P279|Q110983998{ref}""")
+        else:
+            print(f"""LAST|P279|Q214609{ref}""")
 
     country = issuer_dict[coin_details["issuer"]["name"]]
     country_name = coin_details["issuer"]["name"]
@@ -85,6 +92,7 @@ def get_coin_statements(coin_type_id):
     except:
         pass
 
+    # Check engravers
     try:
         for engraver in coin_details["obverse"]["engravers"]:
             engraver_qid = engravers_dict[engraver]
@@ -98,6 +106,29 @@ def get_coin_statements(coin_type_id):
             to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q1542661{ref}\n"""
     except KeyError as e:
         traceback.print_exc()
+
+    # Parse possible depicts
+    print("=== Obverse ===")
+    print(coin_details["obverse"]["description"])
+    print("=== Reverse ===")
+    print(coin_details["reverse"]["description"])
+    for key, value in depict_dict.items():
+
+        if key.lower() in coin_details["obverse"]["description"].lower():
+            to_print = to_print + (f"""LAST|P180|{value}|P518|Q257418{ref}\n""")
+
+        if key.lower() in coin_details["reverse"]["description"].lower():
+            to_print = to_print + f"""LAST|P180|{value}|P518|Q1542661{ref}\n"""
+
+    # Parse possible languages
+
+    for key, value in language_dict.items():
+
+        if key.lower() in coin_details["obverse"]["description"].lower():
+            to_print = to_print + (f"""LAST|P407|{value}|P518|Q257418{ref}\n""")
+
+        if key.lower() in coin_details["reverse"]["description"].lower():
+            to_print = to_print + f"""LAST|P407|{value}|P518|Q1542661{ref}\n"""
 
     if coin_details["type"] == "Standard circulation coin":
         to_print = to_print + f"""LAST|P279|Q110944598{ref}\n"""

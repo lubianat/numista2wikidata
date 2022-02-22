@@ -23,7 +23,6 @@ current_ids = []
 for result in data["results"]["bindings"]:
     current_ids.append(result["numista_id"]["value"])
 
-print(current_ids)
 endpoint = "https://api.numista.com/api/v2"
 user_id = "231967"
 response = requests.get(
@@ -40,8 +39,6 @@ for coin in collected_coins:
     coin_ids.append(str(coin["coin"]["id"]))
 
 coin_ids = list(set(coin_ids))
-
-print(coin_ids)
 
 coin_statements = []
 for coin_id in coin_ids:
