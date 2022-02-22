@@ -1,3 +1,11 @@
+engravers_dict = {
+    "Christopher Ironside": "Q3178662",
+    "John R. Sinnock": "Q15436132",
+    "Geoffrey Colley": "Q110984098",
+    "Renato Brozzi": "Q3932618",
+    "Adrien Dieudonné": "Q2825155",
+}
+
 series_dict = {
     "United States Mint&#039;s &quot;America the Beautiful&quot; Quarters® Program": "Q463177",
     "Olympic Games Rio 2016": "Q110868737",
@@ -39,6 +47,7 @@ composition_dict = {
     "Bimetallic: aluminium-bronze centre in copper-nickel ring (Cu 92 Al 6 Ni 2 - Cu 75 Ni 25)": "Q110867753",
     "Bimetallic: stainless steel centre in bronze plated steel ring": "Q110868008",
     "Bimetallic: brass plated steel centre in nickel plated steel ring": "Q110981251",
+    "Bimetallic: brass centre in steel ring": "Q110984011",
     "Zinc": "Q758",
 }
 
@@ -57,6 +66,7 @@ issuer_dict = {
     "France": "Q142",
     "French West Africa": "Q210682",
     "India": "Q668",
+    "Israel": "Q801",
     "Italy": "Q38",
     "Japan": "Q17",
     "Malta": "Q233",
@@ -94,6 +104,7 @@ currency_dict = {
     "Euro (2002-date)": "Q4916",
     "Escudo (1911-2001)": "Q468474",
     "Escudo (1960-1975)": "Q603071",
+    "Fourth lev (1999-date)": "Q172540",
     "Franc (1795-1959)": "Q184172",
     "Franc (1832-2001)": "Q232415",
     "Franc (1891-1960)": "Q2501214",
@@ -101,10 +112,10 @@ currency_dict = {
     "Guarani (1944-date)": "Q207514",
     "Gulden (1828-date)": "Q522701",
     "Gulden (decimalized, 1817-2001)": "Q203607",
+    "Koruna (1993-date)": "Q131016)",
     "Mark (1873-1923)": "Q705983",
     "New franc (1960-2001)": "Q184172",
-    "Mark (1873-1923)": "Q705983",
-    "New franc (1960-2001)": "Q184172",
+    "New Shekel (1986-date)": "Q131309",
     "Lira (1972-2007)": "Q174467",
     "Lira (1861-2001)": "Q204992",
     "Nakfa (1997-date)": "Q171503",
@@ -115,8 +126,10 @@ currency_dict = {
     "Peso moneda nacional (1881-1969)": "Q961408",
     "Peso (1863-1975)": "Q110899833",
     "Peso (1863-1992)": "Q110981396",
+    "Piso (1967-date)": "Q17193",
     "Pound (1840-1969)": "Q4248884",
     "Pound (1916-date)": "Q199462",
+    "Pound (decimalized, 1983-2007)": "Q193716",
     "Pound sterling (1158-1970)": "Q25224",
     "Pound sterling (decimalized, 1971-date)": "Q25224",
     "Rand (1961-date)": "Q181907",
