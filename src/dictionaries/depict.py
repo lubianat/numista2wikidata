@@ -52,4 +52,8 @@ depict_dict = {
     "Alpine primrose": "Q159537",
     "gentian": "Q144682",
     "gentian ": "Q16974943",
+    "dam on the Acaray River": "Q3433454",
+    "Marshal José Félix Estigarribia": "Q379670",
+    "General José Eduvigis Díaz": "Q599092",
+    "ruins of Humaitá": "Q5404163",
 }
