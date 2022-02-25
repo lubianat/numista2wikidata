@@ -3,6 +3,7 @@ composition_dict = {
     "Aluminium (100% Aluminium)": "Q663",
     "Aluminium-bronze": "Q447546",
     "Aluminium-bronze (88.4% Copper, 5% Nickel, 5% Aluminum, 1% Iron, 0.6% Manganese)": "Q110981323",
+    "Aluminium-bronze (90% Copper, 8% Aluminium, 2% Zinc)": "Q110996919",
     "Aluminium (Al960 Mg35 Mn5)": "Q110899949",
     "Brass": "Q39782",
     "Brass plated steel": "Q110867986",

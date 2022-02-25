@@ -11,6 +11,8 @@ issuer_dict = {
     "Colombia": "Q739",
     "Chile": "Q298",
     "China, People's Republic of": "Q148",
+    "Cyprus": "Q229",
+    "Ecuador": "Q736",
     "Egypt": "Q79",
     "Eritrea": "Q986",
     "Germany - 1871-1948": "Q183",

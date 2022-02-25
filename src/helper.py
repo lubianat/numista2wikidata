@@ -1,7 +1,7 @@
 import requests
 import sys
 import requests
-from dictionaries.dictionaries import *
+from dictionaries.series import *
 from dictionaries.depict import *
 from dictionaries.engraver import *
 from dictionaries.currency import *
@@ -112,6 +112,13 @@ def get_coin_statements(coin_type_id):
     print(coin_details["obverse"]["description"])
     print("=== Reverse ===")
     print(coin_details["reverse"]["description"])
+
+    country_dict_name = f"depict_{country_name.lower()}"
+
+    dict_available = country_dict_name in globals()
+    if dict_available:
+        depict_dict.update(globals()[country_dict_name])
+
     for key, value in depict_dict.items():
 
         if key.lower() in coin_details["obverse"]["description"].lower():
@@ -132,6 +139,7 @@ def get_coin_statements(coin_type_id):
 
     if coin_details["type"] == "Standard circulation coin":
         to_print = to_print + f"""LAST|P279|Q110944598{ref}\n"""
-
+    elif coin_details["type"] == "Circulating commemorative coin":
+        to_print = to_print + f"""LAST|P279|Q110997090{ref}\n"""
     print(to_print)
     return to_print
