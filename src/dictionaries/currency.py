@@ -1,4 +1,5 @@
 currency_dict = {
+    "Austral (1985-1991)": "Q781218",
     "Canadian dollar (1858-date)": "Q1104069",
     "CFA franc (French West Africa, 1944-1958)": "Q191511",
     "Colón (1896-date)": "Q242915",
@@ -27,6 +28,7 @@ currency_dict = {
     "Guarani (1944-date)": "Q207514",
     "Gulden (1828-date)": "Q522701",
     "Gulden (decimalized, 1817-2001)": "Q203607",
+    "Hryvnia (1996-date)": "Q81893",
     "Koruna (1993-date)": "Q131016)",
     "Mark (1873-1923)": "Q705983",
     "New dollar (1949-date)": "Q208526",
@@ -60,6 +62,7 @@ currency_dict = {
     "Sol (1863-1985)": "Q1606309",
     "Sucre (1884-2000)": "Q911562",
     "Nuevo sol (1991-2015) / Sol (2016-date)": "Q204656",
+    "Old lira (1923-2005)": "Q172872",
     "Reichsmark (1924-1948)": "Q155009",
     "Ruble (1961-1991)": "Q615640",
     "Rupee (decimalized, 1957-date)": "Q80524",

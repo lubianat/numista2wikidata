@@ -31,7 +31,6 @@ depict_dict = {
     "George IV State Diadem": "Q1750653",
     "Radiant sun with face.": "Q1047667",
     "Royal Diadem": "Q1750653",
-    "Royal Monogram": "Q110990016",
     "Belgian Constitution": "Q633629",
     "alpine rose": "Q1341190",
     "figure of Helvetia": "Q15317",
@@ -87,8 +86,25 @@ depict_dict = {
     " blossom ": "Q506",
     "Leptotes bicolor": "Q1600726",
     "laurels": "Q26006",
+    "Monstera deliciosa": "Q161077",
+    "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
+    "Her Majesty, Queen Elizabeth II": "Q9682",
+    " maple ": "Q42292",
+    " twig ": "Q11162356",
+    "Miguel de Cervantes": "Q5682",
+    "quill": "Q4063215",
+    "Puma concolor cabrerae": "Q9064708",
 }
 
+depict_austria = {
+    "St. Stephen&#039;s Cathedral": "Q5943",
+    "Austrian flag": "Q46835",
+    "Belvedere Palace": "Q211818",
+}
+
+depict_belgium = {
+    "Royal Monogram": "Q110990016",
+}
 depict_brazil = {
     "National arms": "Q188320",
     "State emblem of Brazil": "Q188320",
@@ -160,4 +176,18 @@ depict_paraguay = {}
 
 depict_peru = {"arms of Peru": "Q4530"}
 
-depict_austria = {"St. Stephen&#039;s Cathedral": "Q5943", "Austrian flag": "Q46835"}
+depict_singapore = {"arms of Singapore": "Q131947"}
+
+depict_turkey = {
+    "Mustafa Kemal Atatürk": "Q5152",
+    "Value and date within wreath": "Q3592503",  # hack for https://en.numista.com/catalogue/pieces1341.html
+    "Value and date within wreat": "Q26006",  # hack for https://en.numista.com/catalogue/pieces1341.html
+    "Value and date within wrea": "Q12106",  # hack for https://en.numista.com/catalogue/pieces1341.html}
+}
+
+depict_ukraine = {
+    "Tryzub": "Q199433",
+    "National Coat of Arms": "Q199433",
+    "Yaroslav the Wise": "Q188943",
+    "Volodymyr the Great": "Q14974",
+}
