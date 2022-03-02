@@ -1,4 +1,4 @@
-engravers_dict = {
+{
     "Arlindo Bastos": "Q110996830",
     "Arthur Sutherland": "Q110990431",
     "Attilio Silvio Motti": "Q108839477",
@@ -173,5 +173,5 @@ engravers_dict = {
     "Adolphe-Emile Hamel": "Q110761785",
     "Giovanni Martino Hamerani": "Q15302764",
     "Giuseppe Ferraris": "Q3770543",
-    "Etem Çalışkan": "Q17430673",
+    "Etem Çalışkan": "Q17430673"
 }

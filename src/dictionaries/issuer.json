@@ -1,4 +1,4 @@
-issuer_dict = {
+{
     "Argentina": "Q414",
     "Austria": "Q40",
     "Bahrain": "Q398",
@@ -6219,5 +6219,5 @@ issuer_dict = {
     "Zwettl, City of": "Q244506",
     "Zwickau, City of": "Q3778",
     "Zwickau, District of": "Q1787592",
-    "Zwiesel, City of": "Q163091",
+    "Zwiesel, City of": "Q163091"
 }

@@ -94,6 +94,7 @@ depict_dict = {
     "Miguel de Cervantes": "Q5682",
     "quill": "Q4063215",
     "Puma concolor cabrerae": "Q9064708",
+    "linden branch": "Q163760",
 }
 
 depict_austria = {
@@ -188,6 +189,8 @@ depict_turkey = {
 depict_ukraine = {
     "Tryzub": "Q199433",
     "National Coat of Arms": "Q199433",
+    "coat of arms": "Q199433",
     "Yaroslav the Wise": "Q188943",
     "Volodymyr the Great": "Q14974",
+    "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808",
 }

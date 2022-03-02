@@ -3,6 +3,9 @@ from helper import *
 
 
 # Send API request to Numista
-coin_type_id = sys.argv[1]
+if len(sys.argv) > 1:
+    coin_type_id = sys.argv[1]
+else:
+    coin_type_id = input("Numista coin ID:")
 
 string = get_coin_statements(coin_type_id)

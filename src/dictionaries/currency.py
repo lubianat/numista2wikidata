@@ -30,6 +30,7 @@ currency_dict = {
     "Gulden (decimalized, 1817-2001)": "Q203607",
     "Hryvnia (1996-date)": "Q81893",
     "Koruna (1993-date)": "Q131016)",
+    "Kuna (1994-date)": "Q26360",
     "Mark (1873-1923)": "Q705983",
     "New dollar (1949-date)": "Q208526",
     "New franc (1960-2001)": "Q184172",
