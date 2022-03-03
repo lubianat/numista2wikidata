@@ -3,6 +3,13 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from login_info import *
 import time
 from helper import *
+from dictionaries.series import *
+from dictionaries.depict import *
+from dictionaries.engraver import *
+from dictionaries.currency import *
+from dictionaries.composition import *
+from dictionaries.issuer import *
+from dictionaries.language import *
 
 sparqlwd = SPARQLWrapper("https://query.wikidata.org/sparql")
 

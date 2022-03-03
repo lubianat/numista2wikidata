@@ -30,6 +30,7 @@ issuer_dict = {
     "Netherlands Antilles": "Q25227",
     "Paraguay": "Q733",
     "Peru": "Q419",
+    "Philippines": "Q928",
     "Portugal": "Q45",
     "Singapore": "Q334",
     "Slovakia": "Q214",

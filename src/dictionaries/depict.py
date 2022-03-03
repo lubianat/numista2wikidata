@@ -95,6 +95,7 @@ depict_dict = {
     "quill": "Q4063215",
     "Puma concolor cabrerae": "Q9064708",
     "linden branch": "Q163760",
+    "barley": "Q11577",
 }
 
 depict_austria = {
@@ -168,11 +169,21 @@ depict_brazil = {
     "child head": "Q7569",
 }
 
+depict_colombia = {"Arms of Colombia": "Q235826", "Chief Calarcá": "Q6400077"}
 depict_ecuador = {"coat of arms": "Q244988"}
+
 depict_egypt = {"Tutankhamun": "Q9048095"}
+
+depict_greece = {
+    "Constantine Kanaris": "Q365201",
+    "corvette, a boat of 1821": "Q11107986",
+}
+
+depict_hungary = {"crowned shield of Hungary": "Q181137"}
 
 depict_india = {"Ashoka lion": "Q3595955"}
 
+depict_kenya = {"President Mzee Jomo Kenyata": "Q173563", "National arms": "Q201068"}
 depict_paraguay = {}
 
 depict_peru = {"arms of Peru": "Q4530"}

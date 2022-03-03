@@ -1,3 +1,4 @@
+from textwrap import indent
 import requests
 import sys
 import requests
@@ -9,6 +10,14 @@ from dictionaries.composition import *
 from dictionaries.issuer import *
 from dictionaries.language import *
 import traceback
+import json
+
+
+def add_key(dictionary, string):
+    qid = input(f"What is the qid for: {string} ?")
+
+    dictionary[string] = qid
+    return dictionary
 
 
 def get_coin_statements(coin_type_id):
@@ -24,9 +33,21 @@ def get_coin_statements(coin_type_id):
     )
     coin_details = response.json()
     # Extract fields of interest
-    currency = currency_dict[coin_details["value"]["currency"]["full_name"]].replace(
-        "Q", "U"
-    )
+
+    currency_name = coin_details["value"]["currency"]["full_name"]
+    global currency_dict
+
+    try:
+        currency = currency_dict[currency_name].replace("Q", "U")
+    except KeyError:
+        traceback.print_exc()
+        currency_dict = add_key(currency_dict, currency_name)
+
+        with open("src/dictionaries/currency.json", "w+") as f:
+            f.write(
+                json.dumps(currency_dict, indent=4, ensure_ascii=False, sort_keys=True)
+            )
+
     value = coin_details["value"]["numeric_value"]
     min_year = coin_details["min_year"]
     max_year = coin_details["max_year"]

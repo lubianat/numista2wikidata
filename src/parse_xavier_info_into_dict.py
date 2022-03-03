@@ -21,7 +21,8 @@ for i, row in issuers_xavier.iterrows():
     name = row[0]
     qid = row[1]
 
-    issuer_dict[name] = qid
+    if qid == qid:  # Skip NaNs
+        issuer_dict[name] = qid
 
 with open("src/dictionaries/issuer.json", "w+") as f:
     f.write(json.dumps(issuer_dict, indent=4, ensure_ascii=False))
