@@ -114,19 +114,42 @@ def get_coin_statements(coin_type_id):
         pass
 
     # Check engravers
+    global engravers_dict
     try:
+        engraver = ""
         for engraver in coin_details["obverse"]["engravers"]:
             engraver_qid = engravers_dict[engraver]
             to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q257418{ref}\n"""
     except KeyError as e:
         traceback.print_exc()
 
+        if engraver != "":
+            engravers_dict = add_key(engravers_dict, engraver)
+
+            with open("src/dictionaries/engraver.json", "w+") as f:
+                f.write(
+                    json.dumps(
+                        engravers_dict, indent=4, ensure_ascii=False, sort_keys=True
+                    )
+                )
+
     try:
+        engraver = ""
         for engraver in coin_details["reverse"]["engravers"]:
             engraver_qid = engravers_dict[engraver]
             to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q1542661{ref}\n"""
     except KeyError as e:
         traceback.print_exc()
+
+        if engraver != "":
+            engravers_dict = add_key(engravers_dict, engraver)
+
+            with open("src/dictionaries/engraver.json", "w+") as f:
+                f.write(
+                    json.dumps(
+                        engravers_dict, indent=4, ensure_ascii=False, sort_keys=True
+                    )
+                )
 
     # Parse possible depicts
     print("=== Obverse ===")
@@ -136,6 +159,7 @@ def get_coin_statements(coin_type_id):
 
     country_dict_name = f"depict_{country_name.lower()}"
 
+    print(f"Issuer:{country_name} ")
     dict_available = country_dict_name in globals()
     if dict_available:
         depict_dict.update(globals()[country_dict_name])

@@ -96,12 +96,23 @@ depict_dict = {
     "Puma concolor cabrerae": "Q9064708",
     "linden branch": "Q163760",
     "barley": "Q11577",
+    "China&#039;s emblem": "Q187327",
+    "monogram RI for the Italian Republic": "Q111080490",
+    "Hammer and sickle overlain on globe above sun with rays, all within wreath or sheaf of wheat stalks, star above.": "Q189925",
+    "German eagle": "Q111080575",
+    "Hibiscus rosa-sinensis": "Q159534",
+    "Lynx lynx balcanicus": "Q2164570",
+    "sun ray": "Q875322",
+    "rising sun": "Q193294",
+    "Dallah ": "Q4115919",
+    "State emblem of Yugoslavia": "Q2548879",
+    "Celtic harp": "Q1288250",
 }
-
 depict_austria = {
     "St. Stephen&#039;s Cathedral": "Q5943",
     "Austrian flag": "Q46835",
     "Belvedere Palace": "Q211818",
+    "Austrian coat of arms": "Q160322",
 }
 
 depict_belgium = {
@@ -174,6 +185,8 @@ depict_ecuador = {"coat of arms": "Q244988"}
 
 depict_egypt = {"Tutankhamun": "Q9048095"}
 
+depict_france = {"the Sower": "Q739085"}
+
 depict_greece = {
     "Constantine Kanaris": "Q365201",
     "corvette, a boat of 1821": "Q11107986",
@@ -183,9 +196,16 @@ depict_hungary = {"crowned shield of Hungary": "Q181137"}
 
 depict_india = {"Ashoka lion": "Q3595955"}
 
+depict_ireland = {}
+depict_italy = {"Mole Antonelliana": "Q201902"}
+
 depict_kenya = {"President Mzee Jomo Kenyata": "Q173563", "National arms": "Q201068"}
+
+depict_luxembourg = {"His Royal Highness Grand Duke Henri": "Q16004"}
+depict_malaysia = {"Rebana": "Q3181140"}
 depict_paraguay = {}
 
+depict_philippines = {"Jose Rizal": "Q1500"}
 depict_peru = {"arms of Peru": "Q4530"}
 
 depict_singapore = {"arms of Singapore": "Q131947"}
@@ -205,3 +225,5 @@ depict_ukraine = {
     "Volodymyr the Great": "Q14974",
     "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808",
 }
+
+depict_uruguay = {"coat of arms": "Q208656"}
