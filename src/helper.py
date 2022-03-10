@@ -4,9 +4,7 @@ import sys
 import requests
 from dictionaries.series import *
 from dictionaries.depict import *
-from dictionaries.engraver import *
-from dictionaries.currency import *
-from dictionaries.composition import *
+from dictionaries.all import *
 from dictionaries.issuer import *
 from dictionaries.language import *
 import traceback
@@ -54,6 +52,7 @@ def get_coin_statements(coin_type_id):
     title_en = f"{coin_details['title']} coin ({min_year} - {max_year})"
     title_pt = f"moeda de {coin_details['title']} ({min_year} - {max_year})"
 
+    global composition_dict
     try:
         material = composition_dict[coin_details["composition"]["text"]]
     except Exception:
@@ -63,26 +62,48 @@ def get_coin_statements(coin_type_id):
             f"""
             CREATE
             LAST|Len|"{text}"
-            LAST|Den|"metallic material used for coins"
-            """
+            LAST|Den|"metallic material used for coins"  """
         )
-
         for key, value in composition_dict.items():
             if key.lower() in text.lower():
                 print(
                     f"""
-        LAST|P527|{value}{ref}
-        """
+            LAST|P527|{value}{ref}"""
                 )
         if "Bimetallic" in text:
             print(f"""LAST|P279|Q110983998{ref}""")
         else:
             print(f"""LAST|P279|Q214609{ref}""")
 
+        composition_dict = add_key(composition_dict, text)
+
+        with open("src/dictionaries/composition.json", "w+") as f:
+            f.write(
+                json.dumps(
+                    composition_dict, indent=4, ensure_ascii=False, sort_keys=True
+                )
+            )
+
     country = issuer_dict[coin_details["issuer"]["name"]]
     country_name = coin_details["issuer"]["name"]
     diameter = coin_details["size"]
     weight = coin_details["weight"]
+    shape = shape_dict[coin_details["shape"]]
+
+    mints = []
+    for mint in coin_details["mints"]:
+
+        try:
+            mints.append(mint_dict[mint["name"]])
+        except Exception:
+            traceback.print_exc()
+            composition_dict = add_key(mint_dict, mint["name"])
+            with open("src/dictionaries/mint.json", "w+") as f:
+                f.write(
+                    json.dumps(mint_dict, indent=4, ensure_ascii=False, sort_keys=True)
+                )
+            break
+    print(coin_details)
 
     # Generate quickstatements
     to_print = f"""
@@ -98,9 +119,12 @@ def get_coin_statements(coin_type_id):
     LAST|P186|{material}{ref}
     LAST|P2386|{diameter}U174789{ref}
     LAST|P2067|{weight}U41803{ref}
+    LAST|P1419|{shape}{ref}
     LAST|P10205|"{str(coin_type_id)}"{ref}
     LAST|P3934|{value}{currency}{ref}
     """
+    for mint in mints:
+        to_print = to_print + f"""LAST|P176|{mint}|P518|Q257418{ref}\n"""
     try:
         series = series_dict[coin_details["series"]]
         to_print = to_print + f"""LAST|P279|{series}{ref}\n"""

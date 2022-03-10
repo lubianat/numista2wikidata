@@ -5,9 +5,7 @@ import time
 from helper import *
 from dictionaries.series import *
 from dictionaries.depict import *
-from dictionaries.engraver import *
-from dictionaries.currency import *
-from dictionaries.composition import *
+from dictionaries.all import *
 from dictionaries.issuer import *
 from dictionaries.language import *
 
@@ -50,8 +48,13 @@ coin_ids = list(set(coin_ids))
 coin_statements = []
 for coin_id in coin_ids:
     if coin_id not in current_ids:
+        print("==================")
+        print(f"./src/get_coin_info {str(coin_id)}")
+        print("==================")
+
         print(f"https://en.numista.com/catalogue/pieces{coin_id}.html")
         coin_statements.append(get_coin_statements(coin_id))
         time.sleep(0.3)
+        break
 with open("new_coins.qs", "w") as f:
     f.write("\n".join(coin_statements))

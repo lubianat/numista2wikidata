@@ -86,6 +86,7 @@ depict_dict = {
     " blossom ": "Q506",
     "Leptotes bicolor": "Q1600726",
     "laurels": "Q26006",
+    " laurel ": "Q26006",
     "Monstera deliciosa": "Q161077",
     "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
     "Her Majesty, Queen Elizabeth II": "Q9682",
@@ -107,6 +108,13 @@ depict_dict = {
     "Dallah ": "Q4115919",
     "State emblem of Yugoslavia": "Q2548879",
     "Celtic harp": "Q1288250",
+    "Pygoscelis papua": "Q213021",
+    "Lochnera rosea": "Q161093",
+    "Bauhinia blakeana": "Q378062",
+    "Iris variegata": "Q164360",
+    "Czech Lion": "Q107477800",
+    "arms of Costa Rica": "Q206398",
+    "Rhinoceros": "Q134657",
 }
 depict_austria = {
     "St. Stephen&#039;s Cathedral": "Q5943",
@@ -180,35 +188,47 @@ depict_brazil = {
     "child head": "Q7569",
 }
 
+depict_chile = {"Mapuche": "Q178484", "coat of arms": "Q233996"}
 depict_colombia = {"Arms of Colombia": "Q235826", "Chief Calarcá": "Q6400077"}
 depict_ecuador = {"coat of arms": "Q244988"}
 
 depict_egypt = {"Tutankhamun": "Q9048095"}
 
-depict_france = {"the Sower": "Q739085"}
+depict_france = {"the Sower": "Q739085", "Marianne": "Q325956"}
 
+depict_finland = {"Finnish lion": "Q111183003"}
 depict_greece = {
     "Constantine Kanaris": "Q365201",
     "corvette, a boat of 1821": "Q11107986",
 }
 
+depict_honduras = {"portrait of  Lempira": "Q2418328",
+"Coat of Arms "}
 depict_hungary = {"crowned shield of Hungary": "Q181137"}
 
 depict_india = {"Ashoka lion": "Q3595955"}
 
 depict_ireland = {}
-depict_italy = {"Mole Antonelliana": "Q201902"}
+depict_italy = {
+    "Mole Antonelliana": "Q201902",
+    "Equestrian Statue of Marcus Aurelius": "Q907387",
+    "Piazza del Campidoglio": "Q34925",
+}
 
 depict_kenya = {"President Mzee Jomo Kenyata": "Q173563", "National arms": "Q201068"}
 
 depict_luxembourg = {"His Royal Highness Grand Duke Henri": "Q16004"}
 depict_malaysia = {"Rebana": "Q3181140"}
+
+depict_mozambique = {"central bank": "Q3363703"}
 depict_paraguay = {}
 
 depict_philippines = {"Jose Rizal": "Q1500"}
 depict_peru = {"arms of Peru": "Q4530"}
 
 depict_singapore = {"arms of Singapore": "Q131947"}
+
+depict_spain = {"arms of Spain": "Q170600", "Juan Carlos I": "Q19943"}
 
 depict_turkey = {
     "Mustafa Kemal Atatürk": "Q5152",
@@ -226,4 +246,8 @@ depict_ukraine = {
     "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808",
 }
 
-depict_uruguay = {"coat of arms": "Q208656"}
+depict_uruguay = {
+    "coat of arms": "Q208656",
+    "Artigas": "Q252847",
+    "Jose Enrique Rodo": "Q734054",
+}

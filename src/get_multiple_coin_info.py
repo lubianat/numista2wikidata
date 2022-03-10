@@ -24,7 +24,11 @@ id_list = []
 for coin in response.json()["coins"]:
     id_list.append(coin["id"])
 
+    break
+
 with open("coin_info.qs", "a") as f:
 
     for coin_id in id_list:
         f.write(get_coin_statements(str(coin_id)))
+
+        break
