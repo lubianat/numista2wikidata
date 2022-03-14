@@ -90,19 +90,24 @@ def get_coin_statements(coin_type_id):
     weight = coin_details["weight"]
     shape = shape_dict[coin_details["shape"]]
 
-    mints = []
-    for mint in coin_details["mints"]:
+    try:
+        mints = []
+        for mint in coin_details["mints"]:
 
-        try:
-            mints.append(mint_dict[mint["name"]])
-        except Exception:
-            traceback.print_exc()
-            composition_dict = add_key(mint_dict, mint["name"])
-            with open("src/dictionaries/mint.json", "w+") as f:
-                f.write(
-                    json.dumps(mint_dict, indent=4, ensure_ascii=False, sort_keys=True)
-                )
-            break
+            try:
+                mints.append(mint_dict[mint["name"]])
+            except Exception:
+                traceback.print_exc()
+                composition_dict = add_key(mint_dict, mint["name"])
+                with open("src/dictionaries/mint.json", "w+") as f:
+                    f.write(
+                        json.dumps(
+                            mint_dict, indent=4, ensure_ascii=False, sort_keys=True
+                        )
+                    )
+                break
+    except Exception:
+        traceback.print_exc()
     print(coin_details)
 
     # Generate quickstatements

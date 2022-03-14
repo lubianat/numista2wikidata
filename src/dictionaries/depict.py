@@ -115,6 +115,7 @@ depict_dict = {
     "Czech Lion": "Q107477800",
     "arms of Costa Rica": "Q206398",
     "Rhinoceros": "Q134657",
+    "Dianthus caryophyllus": "Q158984",
 }
 depict_austria = {
     "St. Stephen&#039;s Cathedral": "Q5943",
@@ -202,8 +203,7 @@ depict_greece = {
     "corvette, a boat of 1821": "Q11107986",
 }
 
-depict_honduras = {"portrait of  Lempira": "Q2418328",
-"Coat of Arms "}
+depict_honduras = {"portrait of  Lempira": "Q2418328", "Coat of Arms": "Q4722"}
 depict_hungary = {"crowned shield of Hungary": "Q181137"}
 
 depict_india = {"Ashoka lion": "Q3595955"}
@@ -221,6 +221,8 @@ depict_luxembourg = {"His Royal Highness Grand Duke Henri": "Q16004"}
 depict_malaysia = {"Rebana": "Q3181140"}
 
 depict_mozambique = {"central bank": "Q3363703"}
+
+depict_nigeria = {"oil palm": "Q165403", "arms of Nigeria": "Q207512"}
 depict_paraguay = {}
 
 depict_philippines = {"Jose Rizal": "Q1500"}
