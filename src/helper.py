@@ -191,8 +191,8 @@ def get_coin_statements(coin_type_id):
     if dict_available:
         dicts["depict"]["global"].update(globals()[country_dict_name])
 
-    if country_name in depict_dicts:
-        dicts["depict"]["global"].update(depict_dicts[country_name])
+    if country_name in dicts["depict"]:
+        dicts["depict"]["global"].update(dicts["depict"][country_name])
 
     for key, value in dicts["depict"]["global"].items():
 

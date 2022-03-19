@@ -1,10 +1,3 @@
-depict_dicts = {}
-depict_dicts["Czechoslovakia"] = {
-    "Socialist coat of arms (1961-1990 version)": "Q12056886",
-    "crane": "Q178692",
-}
-
-
 depict_austria = {
     "St. Stephen&#039;s Cathedral": "Q5943",
     "Austrian flag": "Q46835",
