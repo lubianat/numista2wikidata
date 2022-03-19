@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from helper import *
-
+import clipboard
 
 # Send API request to Numista
 if len(sys.argv) > 1:
@@ -9,3 +9,5 @@ else:
     coin_type_id = input("Numista coin ID:")
 
 string = get_coin_statements(coin_type_id)
+
+clipboard.copy(string)

@@ -1,21 +1,14 @@
 import json
+import os, json
 
-with open("src/dictionaries/engraver.json") as f:
-    engravers_dict = json.loads(f.read())
+dicts = {}
 
+path_to_json = "src/dictionaries"
+json_files = [
+    pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith(".json")
+]
 
-with open("src/dictionaries/currency.json") as f:
-    currency_dict = json.loads(f.read())
-
-with open("src/dictionaries/shapes.json") as f:
-    shape_dict = json.loads(f.read())
-
-with open("src/dictionaries/composition.json") as f:
-    composition_dict = json.loads(f.read())
-
-with open("src/dictionaries/manufacturing.json") as f:
-    manufacturing_dict = json.loads(f.read())
-
-
-with open("src/dictionaries/mint.json") as f:
-    mint_dict = json.loads(f.read())
+for json_file in json_files:
+    keyword = json_file.split(".")[0]
+    with open(f"src/dictionaries/{keyword}.json") as f:
+        dicts[keyword] = json.loads(f.read())

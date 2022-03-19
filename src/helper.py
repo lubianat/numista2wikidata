@@ -5,7 +5,6 @@ import requests
 from dictionaries.series import *
 from dictionaries.depict import *
 from dictionaries.all import *
-from dictionaries.issuer import *
 from dictionaries.language import *
 import traceback
 import json
@@ -19,6 +18,8 @@ def add_key(dictionary, string):
 
 
 def get_coin_statements(coin_type_id):
+    global dicts
+
     api_key = "2GtYY2INUIgmEYynq7xAHTqRY01Us4dOXIf30mlA"
     client_id = "231967"
     endpoint = "https://api.numista.com/api/v2"
@@ -33,17 +34,18 @@ def get_coin_statements(coin_type_id):
     # Extract fields of interest
 
     currency_name = coin_details["value"]["currency"]["full_name"]
-    global currency_dict
 
     try:
-        currency = currency_dict[currency_name].replace("Q", "U")
+        currency = dicts["currency"][currency_name].replace("Q", "U")
     except KeyError:
         traceback.print_exc()
-        currency_dict = add_key(currency_dict, currency_name)
+        dicts["currency"] = add_key(dicts["currency"], currency_name)
 
         with open("src/dictionaries/currency.json", "w+") as f:
             f.write(
-                json.dumps(currency_dict, indent=4, ensure_ascii=False, sort_keys=True)
+                json.dumps(
+                    dicts["currency"], indent=4, ensure_ascii=False, sort_keys=True
+                )
             )
 
     value = coin_details["value"]["numeric_value"]
@@ -52,9 +54,8 @@ def get_coin_statements(coin_type_id):
     title_en = f"{coin_details['title']} coin ({min_year} - {max_year})"
     title_pt = f"moeda de {coin_details['title']} ({min_year} - {max_year})"
 
-    global composition_dict
     try:
-        material = composition_dict[coin_details["composition"]["text"]]
+        material = dicts["composition"][coin_details["composition"]["text"]]
     except Exception:
         traceback.print_exc()
         text = coin_details["composition"]["text"]
@@ -64,7 +65,7 @@ def get_coin_statements(coin_type_id):
             LAST|Len|"{text}"
             LAST|Den|"metallic material used for coins"  """
         )
-        for key, value in composition_dict.items():
+        for key, value in dicts["composition"].items():
             if key.lower() in text.lower():
                 print(
                     f"""
@@ -75,40 +76,39 @@ def get_coin_statements(coin_type_id):
         else:
             print(f"""LAST|P279|Q214609{ref}""")
 
-        composition_dict = add_key(composition_dict, text)
+        dicts["composition"] = add_key(dicts["composition"], text)
 
         with open("src/dictionaries/composition.json", "w+") as f:
             f.write(
                 json.dumps(
-                    composition_dict, indent=4, ensure_ascii=False, sort_keys=True
+                    dicts["composition"], indent=4, ensure_ascii=False, sort_keys=True
                 )
             )
 
-    country = issuer_dict[coin_details["issuer"]["name"]]
+    country = dicts["issuer"][coin_details["issuer"]["name"]]
     country_name = coin_details["issuer"]["name"]
     diameter = coin_details["size"]
     weight = coin_details["weight"]
-    shape = shape_dict[coin_details["shape"]]
+    shape = dicts["shapes"][coin_details["shape"]]
 
     try:
         mints = []
         for mint in coin_details["mints"]:
 
             try:
-                mints.append(mint_dict[mint["name"]])
+                mints.append(dicts["mint"][mint["name"]])
             except Exception:
                 traceback.print_exc()
-                composition_dict = add_key(mint_dict, mint["name"])
+                dicts["composition"] = add_key(dicts["mint"], mint["name"])
                 with open("src/dictionaries/mint.json", "w+") as f:
                     f.write(
                         json.dumps(
-                            mint_dict, indent=4, ensure_ascii=False, sort_keys=True
+                            dicts["mint"], indent=4, ensure_ascii=False, sort_keys=True
                         )
                     )
                 break
     except Exception:
         traceback.print_exc()
-    print(coin_details)
 
     # Generate quickstatements
     to_print = f"""
@@ -129,7 +129,7 @@ def get_coin_statements(coin_type_id):
     LAST|P3934|{value}{currency}{ref}
     """
     for mint in mints:
-        to_print = to_print + f"""LAST|P176|{mint}|P518|Q257418{ref}\n"""
+        to_print = to_print + f"""LAST|P176|{mint}{ref}\n"""
     try:
         series = series_dict[coin_details["series"]]
         to_print = to_print + f"""LAST|P279|{series}{ref}\n"""
@@ -142,41 +142,39 @@ def get_coin_statements(coin_type_id):
     except:
         pass
 
-    # Check engravers
-    global engravers_dict
     try:
         engraver = ""
         for engraver in coin_details["obverse"]["engravers"]:
-            engraver_qid = engravers_dict[engraver]
+            engraver_qid = dicts["engraver"][engraver]
             to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q257418{ref}\n"""
     except KeyError as e:
         traceback.print_exc()
 
         if engraver != "":
-            engravers_dict = add_key(engravers_dict, engraver)
+            dicts["engraver"] = add_key(dicts["engraver"], engraver)
 
             with open("src/dictionaries/engraver.json", "w+") as f:
                 f.write(
                     json.dumps(
-                        engravers_dict, indent=4, ensure_ascii=False, sort_keys=True
+                        dicts["engraver"], indent=4, ensure_ascii=False, sort_keys=True
                     )
                 )
 
     try:
         engraver = ""
         for engraver in coin_details["reverse"]["engravers"]:
-            engraver_qid = engravers_dict[engraver]
+            engraver_qid = dicts["engraver"][engraver]
             to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q1542661{ref}\n"""
     except KeyError as e:
         traceback.print_exc()
 
         if engraver != "":
-            engravers_dict = add_key(engravers_dict, engraver)
+            dicts["engraver"] = add_key(dicts["engraver"], engraver)
 
             with open("src/dictionaries/engraver.json", "w+") as f:
                 f.write(
                     json.dumps(
-                        engravers_dict, indent=4, ensure_ascii=False, sort_keys=True
+                        dicts["engraver"], indent=4, ensure_ascii=False, sort_keys=True
                     )
                 )
 
@@ -191,9 +189,12 @@ def get_coin_statements(coin_type_id):
     print(f"Issuer:{country_name} ")
     dict_available = country_dict_name in globals()
     if dict_available:
-        depict_dict.update(globals()[country_dict_name])
+        dicts["depict"]["global"].update(globals()[country_dict_name])
 
-    for key, value in depict_dict.items():
+    if country_name in depict_dicts:
+        dicts["depict"]["global"].update(depict_dicts[country_name])
+
+    for key, value in dicts["depict"]["global"].items():
 
         if key.lower() in coin_details["obverse"]["description"].lower():
             to_print = to_print + (f"""LAST|P180|{value}|P518|Q257418{ref}\n""")
