@@ -7,6 +7,7 @@ from dictionaries.series import *
 from dictionaries.depict import *
 from dictionaries.all import *
 from dictionaries.language import *
+import clipboard
 
 sparqlwd = SPARQLWrapper("https://query.wikidata.org/sparql")
 
@@ -52,7 +53,11 @@ for coin_id in coin_ids:
         print("==================")
 
         print(f"https://en.numista.com/catalogue/pieces{coin_id}.html")
-        coin_statements.append(get_coin_statements(coin_id))
+
+        statements = get_coin_statements(coin_id)
+        clipboard.copy(statements)
+
+        coin_statements.append(statements)
         time.sleep(0.3)
         break
 with open("new_coins.qs", "w") as f:
