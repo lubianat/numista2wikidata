@@ -3,7 +3,6 @@ import requests
 import sys
 import requests
 from dictionaries.series import *
-from dictionaries.depict import *
 from dictionaries.all import *
 from dictionaries.language import *
 import traceback
@@ -187,10 +186,6 @@ def get_coin_statements(coin_type_id):
     country_dict_name = f"depict_{country_name.lower()}"
 
     print(f"Issuer:{country_name} ")
-    dict_available = country_dict_name in globals()
-    if dict_available:
-        dicts["depict"]["global"].update(globals()[country_dict_name])
-
     if country_name in dicts["depict"]:
         dicts["depict"]["global"].update(dicts["depict"][country_name])
 

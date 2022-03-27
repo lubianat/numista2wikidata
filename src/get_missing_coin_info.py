@@ -4,7 +4,6 @@ from login_info import *
 import time
 from helper import *
 from dictionaries.series import *
-from dictionaries.depict import *
 from dictionaries.all import *
 from dictionaries.language import *
 import clipboard
