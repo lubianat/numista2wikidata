@@ -19,18 +19,10 @@ def add_key(dictionary, string):
 def get_coin_statements(coin_type_id):
     global dicts
 
-    api_key = "2GtYY2INUIgmEYynq7xAHTqRY01Us4dOXIf30mlA"
-    client_id = "231967"
-    endpoint = "https://api.numista.com/api/v2"
-    ref = f'|S854|"https://en.numista.com/catalogue/type{str(coin_type_id)}.html"|S248|Q84602292'
+    coin_details = get_details(coin_type_id)
 
-    response = requests.get(
-        endpoint + "/coins/" + coin_type_id,
-        params={"lang": "en"},
-        headers={"Numista-API-Key": api_key},
-    )
-    coin_details = response.json()
     # Extract fields of interest
+    ref = f'|S854|"https://en.numista.com/catalogue/type{str(coin_type_id)}.html"|S248|Q84602292'
 
     currency_name = coin_details["value"]["currency"]["full_name"]
 
@@ -213,3 +205,17 @@ def get_coin_statements(coin_type_id):
         to_print = to_print + f"""LAST|P279|Q110997090{ref}\n"""
     print(to_print)
     return to_print
+
+
+def get_details(coin_type_id):
+    api_key = "2GtYY2INUIgmEYynq7xAHTqRY01Us4dOXIf30mlA"
+    client_id = "231967"
+    endpoint = "https://api.numista.com/api/v2"
+
+    response = requests.get(
+        endpoint + "/coins/" + coin_type_id,
+        params={"lang": "en"},
+        headers={"Numista-API-Key": api_key},
+    )
+    coin_details = response.json()
+    return coin_details

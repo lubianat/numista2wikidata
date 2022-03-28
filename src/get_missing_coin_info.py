@@ -40,7 +40,11 @@ collected_coins = user_details["collected_coins"]
 
 coin_ids = []
 for coin in collected_coins:
-    coin_ids.append(str(coin["coin"]["id"]))
+    try:
+        coin_ids.append(str(coin["type"]["id"]))
+    except:
+        print(coin)
+        break
 
 coin_ids = list(set(coin_ids))
 
@@ -53,11 +57,7 @@ for coin_id in coin_ids:
 
         print(f"https://en.numista.com/catalogue/pieces{coin_id}.html")
 
-        statements = get_coin_statements(coin_id)
-        clipboard.copy(statements)
-
-        coin_statements.append(statements)
-        time.sleep(0.3)
+        os.system(f"./src/get_coin_info {str(coin_id)}")
         break
 with open("new_coins.qs", "w") as f:
     f.write("\n".join(coin_statements))

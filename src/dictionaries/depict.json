@@ -75,7 +75,8 @@
     },
     "Colombia": {
         "Arms of Colombia": "Q235826",
-        "Chief Calarc\u00e1": "Q6400077"
+        "Chief Calarc\u00e1": "Q6400077",
+        "Frailej\u00f3n": "Q15596502"
     },
     "Czechoslovakia": {
         "Socialist coat of arms (1961-1990 version)": "Q12056886",
@@ -92,6 +93,7 @@
     },
     "France": {
         "Marianne": "Q325956",
+        "rooster": "Q2488240",
         "the Sower": "Q739085"
     },
     "Greece": {
@@ -109,10 +111,16 @@
         "Ashoka lion": "Q3595955"
     },
     "Ireland": {},
+    "Israel": {
+        "Palm tree with seven leaves and two baskets with dates": "Q25292",
+        "basket with dates": "Q1652093",
+        "emblem of the State of Israel": "Q184991"
+    },
     "Italy": {
         "Equestrian Statue of Marcus Aurelius": "Q907387",
         "Mole Antonelliana": "Q201902",
-        "Piazza del Campidoglio": "Q34925"
+        "Piazza del Campidoglio": "Q34925",
+        "Radio transmitter antenna invented by Marconi": "Q111398782"
     },
     "Kenya": {
         "National arms": "Q201068",
@@ -140,6 +148,11 @@
     },
     "Singapore": {
         "arms of Singapore": "Q131947"
+    },
+    "South Africa": {
+        "New coat of arms": "Q203330",
+        "New national coat of arms": "Q203330",
+        "arum lily": "Q1945905"
     },
     "Spain": {
         "Juan Carlos I": "Q19943",
@@ -187,12 +200,14 @@
         "Antoine Bovy": "Q116730",
         "Apollo 11 Mission Insignia": "Q110989224",
         "Ara macao": "Q243761",
+        "Arms of Colombia": "Q235826",
         "Aztec calendar stone": "Q786806",
         "Bauhinia blakeana": "Q378062",
         "Belgian Constitution": "Q633629",
         "Cattle herder": "Q5179781",
         "Celtic harp": "Q1288250",
         "Chiang Kai-shek": "Q16574",
+        "Chief Calarc\u00e1": "Q6400077",
         "China&#039;s emblem": "Q187327",
         "China's emblem": "Q187327",
         "Chrysanthemum": "Q59882",
@@ -201,12 +216,17 @@
         "Czech Lion": "Q107477800",
         "Dallah ": "Q4115919",
         "Dianthus caryophyllus": "Q158984",
+        "Equestrian Statue of Marcus Aurelius": "Q907387",
         "Fisher": "Q331432",
+        "Flavius amphitheatre": "Q10285",
         "General Jos\u00e9 Eduvigis D\u00edaz": "Q599092",
         "George IV State Diadem": "Q1750653",
         "German eagle": "Q111080575",
         "Globe with sash": "Q328720",
+        "Greater Kudu": "Q139487",
+        "Guglielmo Marconi": "Q36488",
         "Hammer and sickle overlain on globe above sun with rays, all within wreath or sheaf of wheat stalks, star above.": "Q189925",
+        "Head of Ceres": "Q32102",
         "Her Majesty, Queen Elizabeth II": "Q9682",
         "Hibiscus rosa-sinensis": "Q159534",
         "Iris variegata": "Q164360",
@@ -219,13 +239,19 @@
         "L\u00e9opold II ": "Q12967",
         "Madara horseman": "Q319296",
         "Map ": "Q4006",
+        "Mapuche": "Q178484",
+        "Marianne": "Q325956",
         "Marshal Jos\u00e9 F\u00e9lix Estigarribia": "Q379670",
         "Miguel de Cervantes": "Q5682",
+        "Mole Antonelliana": "Q201902",
         "Monstera deliciosa": "Q161077",
+        "New national coat of arms": "Q203330",
         "Orange blosso": "Q3355098",
         "Orange blossom": "Q1152711",
+        "Palm tree with seven leaves and two baskets with dates": "Q25292",
         "Pedro Alvares Cabral": "Q174432",
         "Peony blossom": "Q163076",
+        "Piazza del Campidoglio": "Q34925",
         "Protea flower": "Q1930962",
         "Puma concolor": "Q35255",
         "Puma concolor cabrerae": "Q9064708",
@@ -234,8 +260,10 @@
         "Queen Juliana": "Q154946",
         "Radiant sun with face.": "Q1047667",
         "Rhinoceros": "Q134657",
+        "Rice plant": "Q161426",
         "Royal Diadem": "Q1750653",
         "Sailing ship": "Q170483",
+        "Somali Pigeon": "Q524321",
         "South African coat of arms": "Q203330",
         "Southern Cross": "Q10542",
         "Soy Bean Plant": "Q11006",
@@ -248,12 +276,16 @@
         "Topographical map": "Q216526",
         "Tr\u00fcmmerfrau": "Q641166",
         "Vittorio Emanuele III": "Q150642",
+        "Vultur gryphus": "Q170598",
         "Wing": "Q161358",
         "Zebu": "Q46889",
         "a map,": "Q4006",
         "alpine rose": "Q1341190",
         "arms of Costa Rica": "Q206398",
+        "arms of Peru": "Q4530",
+        "arum lily": "Q1945905",
         "barley": "Q11577",
+        "basket with dates": "Q1652093",
         "birds": "Q5113",
         "coat of arms of Switzerland": "Q189560",
         "coffee": "Q156354",
@@ -261,6 +293,7 @@
         "cows": "Q830",
         "dam on the Acaray River": "Q3433454",
         "edelweiss": "Q178265",
+        "emblem of the State of Israel": "Q184991",
         "figure of Helvetia": "Q15317",
         "fishing net": "Q271598",
         "flower": "Q506",
@@ -279,10 +312,14 @@
         "oil derrick": "Q12688575",
         "orange branch": "Q3355098",
         "quill": "Q4063215",
+        "radio wave": "Q4262",
         "rising sun": "Q193294",
+        "rooster": "Q2216236",
         "ruins of Humait\u00e1": "Q5404163",
         "shield": "Q131559",
+        "sprig": "Q2923673",
         "sun ray": "Q875322",
+        "the Sower": "Q739085",
         "tobacco": "Q181095",
         "verse of the first national coin": "Q110990558",
         "wheat": "Q12106",
