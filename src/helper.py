@@ -2,9 +2,7 @@ from textwrap import indent
 import requests
 import sys
 import requests
-from dictionaries.series import *
 from dictionaries.all import *
-from dictionaries.language import *
 import traceback
 import json
 
@@ -122,7 +120,7 @@ def get_coin_statements(coin_type_id):
     for mint in mints:
         to_print = to_print + f"""LAST|P176|{mint}{ref}\n"""
     try:
-        series = series_dict[coin_details["series"]]
+        series = dicts["series"][coin_details["series"]]
         to_print = to_print + f"""LAST|P279|{series}{ref}\n"""
     except:
         pass
@@ -191,7 +189,7 @@ def get_coin_statements(coin_type_id):
 
     # Parse possible languages
 
-    for key, value in language_dict.items():
+    for key, value in dicts["language"].items():
 
         if key.lower() in coin_details["obverse"]["description"].lower():
             to_print = to_print + (f"""LAST|P407|{value}|P518|Q257418{ref}\n""")

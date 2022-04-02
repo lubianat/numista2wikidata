@@ -78,6 +78,10 @@
         "Chief Calarc\u00e1": "Q6400077",
         "Frailej\u00f3n": "Q15596502"
     },
+    "Czech Republic": {
+        "Charles Bridges": "Q204871",
+        "Vltava river": "Q131574"
+    },
     "Czechoslovakia": {
         "Socialist coat of arms (1961-1990 version)": "Q12056886",
         "crane": "Q178692"
@@ -95,6 +99,9 @@
         "Marianne": "Q325956",
         "rooster": "Q2488240",
         "the Sower": "Q739085"
+    },
+    "German Democratic Republic": {
+        "State emblem of the German Democratic Republic": "Q48168"
     },
     "Greece": {
         "Constantine Kanaris": "Q365201",
@@ -206,6 +213,7 @@
         "Belgian Constitution": "Q633629",
         "Cattle herder": "Q5179781",
         "Celtic harp": "Q1288250",
+        "Charles Bridges": "Q204871",
         "Chiang Kai-shek": "Q16574",
         "Chief Calarc\u00e1": "Q6400077",
         "China&#039;s emblem": "Q187327",
@@ -269,6 +277,7 @@
         "Soy Bean Plant": "Q11006",
         "Soybean": "Q11006",
         "State emblem of Yugoslavia": "Q2548879",
+        "State emblem of the German Democratic Republic": "Q48168",
         "Sugar canes": "Q3391243",
         "Sugarcane": "Q3391243",
         "Susan B. Anthony": "Q192245",
@@ -276,6 +285,7 @@
         "Topographical map": "Q216526",
         "Tr\u00fcmmerfrau": "Q641166",
         "Vittorio Emanuele III": "Q150642",
+        "Vltava river": "Q131574",
         "Vultur gryphus": "Q170598",
         "Wing": "Q161358",
         "Zebu": "Q46889",
@@ -310,11 +320,12 @@
         "national emblem of Mexico": "Q170867",
         "oak": "Q12004",
         "oil derrick": "Q12688575",
+        "olive": "Q37083",
         "orange branch": "Q3355098",
         "quill": "Q4063215",
         "radio wave": "Q4262",
         "rising sun": "Q193294",
-        "rooster": "Q2216236",
+        "rooster": "Q2488240",
         "ruins of Humait\u00e1": "Q5404163",
         "shield": "Q131559",
         "sprig": "Q2923673",
