@@ -5,11 +5,12 @@ import requests
 from dictionaries.all import *
 import traceback
 import json
+import clipboard
 
 
 def add_key(dictionary, string):
+    clipboard.copy(string)
     qid = input(f"What is the qid for: {string} ?")
-
     dictionary[string] = qid
     return dictionary
 
@@ -140,6 +141,13 @@ def get_coin_statements(coin_type_id):
         traceback.print_exc()
 
         if engraver != "":
+            qs = f"""
+            CREATE
+            LAST|Len|"{engraver}"
+            LAST|Den|"engraver"
+            LAST|P31|Q5
+            LAST|P106|Q329439{ref}  """
+            print(qs)
             dicts["engraver"] = add_key(dicts["engraver"], engraver)
 
             with open("src/dictionaries/engraver.json", "w+") as f:
@@ -158,6 +166,14 @@ def get_coin_statements(coin_type_id):
         traceback.print_exc()
 
         if engraver != "":
+            engraver = ""
+            qs = f"""
+                CREATE
+                LAST|Len|"{engraver}"
+                LAST|Den|"engraver"
+                LAST|P31|Q5
+                LAST|P106|Q329439{ref}  """
+            print(qs)
             dicts["engraver"] = add_key(dicts["engraver"], engraver)
 
             with open("src/dictionaries/engraver.json", "w+") as f:

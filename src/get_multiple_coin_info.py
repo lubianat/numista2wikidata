@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
+
 from helper import *
 from login_info import *
 
-
 # Send API request to Numista
-
-
 with open("coin_info.qs", "w+") as f:
     f.write("")
 
@@ -23,7 +21,6 @@ print(response.json())
 id_list = []
 for coin in response.json()["coins"]:
     id_list.append(coin["id"])
-
     break
 
 with open("coin_info.qs", "a") as f:
