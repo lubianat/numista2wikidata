@@ -166,7 +166,6 @@ def get_coin_statements(coin_type_id):
         traceback.print_exc()
 
         if engraver != "":
-            engraver = ""
             qs = f"""
                 CREATE
                 LAST|Len|"{engraver}"
