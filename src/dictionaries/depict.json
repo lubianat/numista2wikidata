@@ -6,6 +6,7 @@
         "St. Stephen&#039;s Cathedral": "Q5943"
     },
     "Belgium": {
+        "Baudouin I": "Q12976",
         "King Albert II ": "Q3911",
         "Royal Monogram": "Q110990016"
     },
@@ -79,6 +80,9 @@
         "Arms of Colombia": "Q235826",
         "Chief Calarc\u00e1": "Q6400077",
         "Frailej\u00f3n": "Q15596502"
+    },
+    "Croatia": {
+        "arms of Croatia": "Q184252"
     },
     "Cyprus": {
         "Zeno of Citium": "Q171303"
@@ -161,6 +165,10 @@
     "Philippines": {
         "Jose Rizal": "Q1500"
     },
+    "Poland": {
+        "Polish eagle": "Q170496",
+        "arms of Poland ": "Q170496"
+    },
     "Seychelles": {
         "Arms": "Q213029"
     },
@@ -168,20 +176,27 @@
         "arms of Singapore": "Q131947"
     },
     "South Africa": {
+        "Arms of South Africa with the motto &quot;Ex Unitate Vires&quot;": "Q28134642",
+        "Bird-of-Paradise": "Q147888",
         "Jan van Riebeeck ": "Q294769",
         "New coat of arms": "Q203330",
         "New national coat of arms": "Q203330",
+        "South Africa coat of arms with the motto &quot;Ex Unitate Vires&quot; ": "Q28134642",
         "arum lily": "Q1945905"
     },
     "Spain": {
+        "Dancer on stilts": "Q2919486",
         "Juan Carlos I": "Q19943",
-        "arms of Spain": "Q170600"
+        "Porch of Revell\u00edn": "Q6032863",
+        "arms of Spain": "Q170600",
+        "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160"
     },
     "Tonga": {
         "king Tupou VI": "Q208497"
     },
     "Turkey": {
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
+        "Turkish crescent": "Q3592503",
         "Value and date within wrea": "Q12106",
         "Value and date within wreat": "Q26006",
         "Value and date within wreath": "Q3592503"
@@ -216,21 +231,25 @@
         " laurel ": "Q26006",
         " maple ": "Q42292",
         " rice ": "Q161426",
+        " rye stalk": "Q12099",
         " spear ": "Q44475",
         " twig ": "Q11162356",
         " water ": "Q283",
         "A globe": "Q2",
         "Admiral Yi Sun-sin": "Q50184",
+        "African lily": "Q161256",
         "Alpine primrose": "Q159537",
         "Antelope": "Q25894",
         "Antoine Bovy": "Q116730",
         "Apollo 11 Mission Insignia": "Q110989224",
         "Ara macao": "Q243761",
         "Arms of Colombia": "Q235826",
+        "Arms of South Africa with the motto &quot;Ex Unitate Vires&quot;": "Q28134642",
         "Artigas": "Q252847",
         "Aztec calendar stone": "Q786806",
         "Bauhinia blakeana": "Q378062",
         "Belgian Constitution": "Q633629",
+        "Brandenburg Gate": "Q82425",
         "Capybara": "Q131538",
         "Cattle herder": "Q5179781",
         "Celtic harp": "Q1288250",
@@ -261,8 +280,11 @@
         "Her Majesty, Queen Elizabeth II": "Q9682",
         "Hibiscus rosa-sinensis": "Q159534",
         "Iris variegata": "Q164360",
+        "Jan van Riebeeck ": "Q294769",
         "Joao Ramalho": "Q3889012",
         "Jose Enrique Rodo": "Q734054",
+        "Juan Carlos I": "Q19943",
+        "King Albert II ": "Q3911",
         "Laureate head": "Q40794959",
         "Leptotes bicolor": "Q1600726",
         "Lochnera rosea": "Q161093",
@@ -279,6 +301,7 @@
         "Mole Antonelliana": "Q201902",
         "Monstera deliciosa": "Q161077",
         "Mud crab": "Q3544834",
+        "Mustafa Kemal Atat\u00fcrk": "Q5152",
         "New coat of arms": "Q203330",
         "New national coat of arms": "Q203330",
         "Orange blosso": "Q3355098",
@@ -287,6 +310,7 @@
         "Pedro Alvares Cabral": "Q174432",
         "Peony blossom": "Q163076",
         "Piazza del Campidoglio": "Q34925",
+        "Polish eagle": "Q170496",
         "Protea flower": "Q1930962",
         "Puma concolor": "Q35255",
         "Puma concolor cabrerae": "Q9064708",
@@ -299,6 +323,7 @@
         "Rice plant": "Q161426",
         "Royal Diadem": "Q1750653",
         "Royal Monogram": "Q110990016",
+        "Royal Protea": "Q1930962",
         "Sailing ship": "Q170483",
         "Somali Pigeon": "Q524321",
         "South African coat of arms": "Q203330",
@@ -313,6 +338,10 @@
         "The national arms of Mexico": "Q170867",
         "Topographical map": "Q216526",
         "Tr\u00fcmmerfrau": "Q641166",
+        "Value and date within wrea": "Q12106",
+        "Value and date within wreat": "Q26006",
+        "Value and date within wreath": "Q3592503",
+        "Velebit degenia": "Q2716037",
         "Vittorio Emanuele III": "Q150642",
         "Vltava river": "Q131574",
         "Vultur gryphus": "Q170598",
@@ -322,17 +351,20 @@
         "alpine rose": "Q1341190",
         "arms of Costa Rica": "Q206398",
         "arms of Peru": "Q4530",
+        "arms of Spain": "Q170600",
         "arum lily": "Q1945905",
         "barley": "Q11577",
         "basket with dates": "Q1652093",
         "bird in flight": "Q1991038",
         "birds": "Q5113",
-        "coat of arms": "Q233996",
+        "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
         "coat of arms of Switzerland": "Q189560",
         "coffee": "Q156354",
         "cotton": "Q719312",
         "cows": "Q830",
+        "crowned shield of Hungary": "Q181137",
         "dam on the Acaray River": "Q3433454",
+        "date palm": "Q25292",
         "dolphin": "Q7369",
         "edelweiss": "Q178265",
         "emblem of the State of Israel": "Q184991",
@@ -342,9 +374,13 @@
         "flower": "Q506",
         "gentian": "Q144682",
         "gentian ": "Q16974943",
+        "grape": "Q30046",
+        "grapes": "Q10978",
         "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
         "laurel wreath": "Q734844",
         "laurels": "Q26006",
+        "leaf": "Q33971",
+        "leaves": "Q33971",
         "leek": "Q1807269",
         "leek, the emblem of Wales": "Q1807269",
         "linden branch": "Q163760",
@@ -352,10 +388,12 @@
         "monogram RI for the Italian Republic": "Q111080490",
         "national emblem of Mexico": "Q170867",
         "oak": "Q12004",
+        "oat stalk": "Q12104",
         "oil derrick": "Q12688575",
         "olive": "Q37083",
         "orange branch": "Q3355098",
         "orchid ": "Q25308",
+        "palm tree": "Q14080",
         "quill": "Q4063215",
         "radio wave": "Q4262",
         "rising sun": "Q193294",
@@ -368,6 +406,7 @@
         "the Sower": "Q739085",
         "tobacco": "Q181095",
         "towered crown": "Q429340",
+        "tree": "Q10884",
         "verse of the first national coin": "Q110990558",
         "wheat": "Q12106",
         "wheat ear": "Q107563349",

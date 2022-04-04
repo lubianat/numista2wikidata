@@ -104,9 +104,7 @@ def get_coin_statements(coin_type_id):
     to_print = f"""
     CREATE
     LAST|Len|"{title_en}"
-    LAST|Lpt|"{title_pt}"
     LAST|Den|"coin from {country_name}"
-    LAST|Dpt|"tipo de moeda"
     LAST|P279|Q41207
     LAST|P17|{country}{ref}
     LAST|P580|+{min_year}-00-00T00:00:00Z/9{ref}
@@ -120,11 +118,20 @@ def get_coin_statements(coin_type_id):
     """
     for mint in mints:
         to_print = to_print + f"""LAST|P176|{mint}{ref}\n"""
-    try:
-        series = dicts["series"][coin_details["series"]]
-        to_print = to_print + f"""LAST|P279|{series}{ref}\n"""
-    except:
-        pass
+
+    if "series" in coin_details:
+        if coin_details["series"] in dicts["series"]:
+            series = dicts["series"][coin_details["series"]]
+            to_print = to_print + f"""LAST|P179|{series}{ref}\n"""
+        else:
+            dicts["series"] = add_key(dicts["series"], coin_details["series"])
+
+            with open("src/dictionaries/series.json", "w+") as f:
+                f.write(
+                    json.dumps(
+                        dicts["series"], indent=4, ensure_ascii=False, sort_keys=True
+                    )
+                )
 
     try:
         thickness = coin_details["thickness"]
