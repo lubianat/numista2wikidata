@@ -6,13 +6,7 @@ from dictionaries.all import *
 import traceback
 import json
 import clipboard
-
-
-def add_key(dictionary, string):
-    clipboard.copy(string)
-    qid = input(f"What is the qid for: {string} ?")
-    dictionary[string] = qid
-    return dictionary
+from wdcuration.wdcuration import add_key
 
 
 def get_coin_statements(coin_type_id):
