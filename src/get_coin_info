@@ -1,45 +1,47 @@
 #!/usr/bin/env python3
 from helper import *
 import clipboard
-
-# Send API request to Numista
-if len(sys.argv) > 1:
-    coin_type_id = sys.argv[1]
-else:
-    coin_type_id = input("Numista coin ID:")
-
-string = get_coin_statements(coin_type_id)
-
-clipboard.copy(string)
+import click
 
 
-coin_details = get_details(coin_type_id)
-country_name = coin_details["issuer"]["name"]
+@click.command()
+@click.option("--coin_type_id", prompt="The Numista ID")
+def main(coin_type_id: str):
+    string = get_coin_statements(coin_type_id)
+
+    clipboard.copy(string)
+
+    coin_details = get_details(coin_type_id)
+    country_name = coin_details["issuer"]["name"]
+
+    def add_depict(country_name):
+        global dicts
+        add_depict_bool = input("Add depicts? 1 = global, 2 = national, other = no :")
+
+        if add_depict_bool == "1":
+            string_to_add = input("String to add:")
+            dicts["depict"]["global"] = add_key(
+                dicts["depict"]["global"], string_to_add
+            )
+            add_depict(country_name)
+        elif add_depict_bool == "2":
+            string_to_add = input("String to add:")
+
+            if country_name not in dicts["depict"]:
+                dicts["depict"][country_name] = {}
+            dicts["depict"][country_name] = add_key(
+                dicts["depict"][country_name], string_to_add
+            )
+            add_depict(country_name)
+
+        else:
+            return 0
+
+    add_depict(country_name)
+
+    with open("src/dictionaries/depict.json", "w+") as f:
+        f.write(json.dumps(dicts["depict"], indent=4, sort_keys=True))
 
 
-def add_depict(country_name):
-    global dicts
-    add_depict_bool = input("Add depicts? 1 = global, 2 = national, other = no :")
-
-    if add_depict_bool == "1":
-        string_to_add = input("String to add:")
-        dicts["depict"]["global"] = add_key(dicts["depict"]["global"], string_to_add)
-        add_depict(country_name)
-    elif add_depict_bool == "2":
-        string_to_add = input("String to add:")
-
-        if country_name not in dicts["depict"]:
-            dicts["depict"][country_name] = {}
-        dicts["depict"][country_name] = add_key(
-            dicts["depict"][country_name], string_to_add
-        )
-        add_depict(country_name)
-
-    else:
-        return 0
-
-
-add_depict(country_name)
-
-with open("src/dictionaries/depict.json", "w+") as f:
-    f.write(json.dumps(dicts["depict"], indent=4, sort_keys=True))
+if __name__ == "__main__":
+    main()
