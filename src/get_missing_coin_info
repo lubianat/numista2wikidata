@@ -51,12 +51,12 @@ coin_statements = []
 for coin_id in coin_ids:
     if coin_id not in current_ids:
         print("==================")
-        print(f"./src/get_coin_info {str(coin_id)}")
+        print(f"./src/get_coin_info --coin_type_id {str(coin_id)}")
         print("==================")
 
         print(f"https://en.numista.com/catalogue/pieces{coin_id}.html")
 
-        os.system(f"./src/get_coin_info {str(coin_id)}")
+        os.system(f"./src/get_coin_info --coin_type_id {str(coin_id)}")
         break
 with open("new_coins.qs", "w") as f:
     f.write("\n".join(coin_statements))
