@@ -45,6 +45,10 @@ def main(coin_type_id: str):
     with open("src/dictionaries/depict.json", "w+") as f:
         f.write(json.dumps(dicts["depict"], indent=4, sort_keys=True))
 
+    repeat = input("Rerun command? (y/n) ")
+    if repeat == "y":
+        main()
+
 
 if __name__ == "__main__":
     main()
