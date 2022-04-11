@@ -6,7 +6,7 @@ from dictionaries.all import *
 import traceback
 import json
 import clipboard
-from wdcuration import add_key
+from wdcuration import add_key, render_qs_url
 
 
 def get_coin_statements(coin_type_id):
@@ -148,7 +148,7 @@ def get_coin_statements(coin_type_id):
             LAST|Den|"engraver"
             LAST|P31|Q5
             LAST|P106|Q329439{ref}  """
-            print(qs)
+            print(render_qs_url(qs))
             dicts["engraver"] = add_key(dicts["engraver"], engraver)
 
             with open("src/dictionaries/engraver.json", "w+") as f:
@@ -173,7 +173,7 @@ def get_coin_statements(coin_type_id):
                 LAST|Den|"engraver"
                 LAST|P31|Q5
                 LAST|P106|Q329439{ref}  """
-            print(qs)
+            print(render_qs_url(qs))
             dicts["engraver"] = add_key(dicts["engraver"], engraver)
 
             with open("src/dictionaries/engraver.json", "w+") as f:
