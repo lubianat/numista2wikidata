@@ -6,7 +6,7 @@ from dictionaries.all import *
 import traceback
 import json
 import clipboard
-from wdcuration.wdcuration import add_key
+from wdcuration import add_key
 
 
 def get_coin_statements(coin_type_id):
