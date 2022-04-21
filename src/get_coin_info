@@ -5,6 +5,7 @@ import click
 from wdcuration.wdcuration import add_key, render_qs_url
 import json
 from dictionaries.all import dicts
+import webbrowser
 
 
 @click.command()
@@ -13,7 +14,7 @@ def main(coin_type_id: str):
     string = get_coin_statements(coin_type_id)
 
     clipboard.copy(string)
-    print(render_qs_url(string))
+    webbrowser.open_new_tab(render_qs_url(string))
     coin_details = get_details(coin_type_id)
     country_name = coin_details["issuer"]["name"]
 
