@@ -76,6 +76,7 @@
     },
     "Chile": {
         "Mapuche": "Q178484",
+        "andean condor": "Q170598",
         "arms of Chile": "Q233996",
         "coat of arms": "Q233996"
     },
@@ -122,6 +123,10 @@
         "Constantine Kanaris": "Q365201",
         "corvette, a boat of 1821": "Q11107986"
     },
+    "Haiti": {
+        "Charlemagne P\u00e9ralte": "Q2957888",
+        "coat of arms": "Q207701"
+    },
     "Honduras": {
         "Coat of Arms": "Q4722",
         "portrait of  Lempira": "Q2418328"
@@ -156,6 +161,7 @@
         "His Royal Highness Grand Duke Henri": "Q16004"
     },
     "Malaysia": {
+        "Congkak": "Q473986",
         "Rebana": "Q3181140"
     },
     "Mozambique": {
@@ -215,6 +221,9 @@
         "Value and date within wreat": "Q26006",
         "Value and date within wreath": "Q3592503"
     },
+    "Uganda": {
+        "coat of arms": "Q108570"
+    },
     "Ukraine": {
         "National Coat of Arms": "Q199433",
         "Tryzub": "Q199433",
@@ -228,6 +237,7 @@
         "badge of the Prince of Whales": "Q2899400"
     },
     "United States": {
+        "Camel&#039;s Hump Mountain": "Q5025846",
         "Charter Oak": "Q1067811",
         "George Washington": "Q23"
     },
@@ -268,6 +278,7 @@
         "Ant\u00f4nio Carlos Gomes": "Q263855",
         "Apollo 11 Mission Insignia": "Q110989224",
         "Ara macao": "Q243761",
+        "Arms": "Q213029",
         "Arms of Colombia": "Q235826",
         "Arms of South Africa with the motto &quot;Ex Unitate Vires&quot;": "Q28134642",
         "Artigas": "Q252847",
@@ -280,11 +291,14 @@
         "Belvedere Palace": "Q211818",
         "Brandenburg Gate": "Q82425",
         "Bust of a woman representing the Republic": "Q4483461",
+        "Camel&#039;s Hump Mountain": "Q5025846",
         "Capybara": "Q131538",
         "Cattle herder": "Q5179781",
         "Cazique Tibiri\u00e7\u00e1": "Q6210522",
         "Celtic harp": "Q1288250",
+        "Charlemagne P\u00e9ralte": "Q2957888",
         "Charles Bridges": "Q204871",
+        "Charter Oak": "Q1067811",
         "Chiang Kai-shek": "Q16574",
         "Chief Calarc\u00e1": "Q6400077",
         "China&#039;s emblem": "Q187327",
@@ -299,6 +313,7 @@
         "D. Jo\u00e3o III, King of Portugal": "Q216789",
         "Dallah ": "Q4115919",
         "Dancer on stilts": "Q2919486",
+        "Dasypus hybridus": "Q1767476",
         "Dianthus caryophyllus": "Q158984",
         "Diogo Ant\u00f4nio Feij\u00f3": "Q1791593",
         "Duke of Caxias": "Q712089",
@@ -315,6 +330,7 @@
         "Garcinia sessilis": "Q15391104",
         "General Jos\u00e9 Eduvigis D\u00edaz": "Q599092",
         "George IV State Diadem": "Q1750653",
+        "George Washington": "Q23",
         "German eagle": "Q111080575",
         "Get\u00falio Dornelles Vargas": "Q156844",
         "Globe with sash": "Q328720",
@@ -326,6 +342,7 @@
         "Head of Liberty": "Q4483461",
         "Her Majesty, Queen Elizabeth II": "Q9682",
         "Hibiscus rosa-sinensis": "Q159534",
+        "His Royal Highness Grand Duke Henri": "Q16004",
         "Iris variegata": "Q164360",
         "Jan van Riebeeck ": "Q294769",
         "Jasminum sambac": "Q1356614",
@@ -384,6 +401,7 @@
         "Queen Juliana": "Q154946",
         "Radiant sun with face.": "Q1047667",
         "Radio transmitter antenna invented by Marconi": "Q111398782",
+        "Rebana": "Q3181140",
         "Rhinoceros": "Q134657",
         "Rice plant": "Q161426",
         "Royal Diadem": "Q1750653",
@@ -431,7 +449,9 @@
         "a star with a circle": "Q188320",
         "allegory of the Republic ": "Q4483461",
         "alpine rose": "Q1341190",
+        "andean condor": "Q170598",
         "armillary sphere": "Q328720",
+        "arms of Chile": "Q233996",
         "arms of Costa Rica": "Q206398",
         "arms of Peru": "Q4530",
         "arms of Singapore": "Q131947",
@@ -443,8 +463,11 @@
         "basket with dates": "Q1652093",
         "bird in flight": "Q1991038",
         "birds": "Q5113",
+        "bread fruit": "Q14677",
+        "caribou": "Q39624",
         "child head": "Q7569",
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
+        "coat of arms": "Q207701",
         "coffee": "Q156354",
         "cotton": "Q719312",
         "cows": "Q830",
@@ -475,6 +498,7 @@
         "linden branch": "Q163760",
         "lion": "Q140",
         "male head": "Q8441",
+        "maple tree": "Q59772474",
         "monogram RI for the Italian Republic": "Q111080490",
         "national emblem of Mexico": "Q170867",
         "oak": "Q12004",
@@ -503,6 +527,7 @@
         "tobacco": "Q181095",
         "towered crown": "Q429340",
         "tree": "Q10884",
+        "vanilla": "Q162044",
         "verse of the first national coin": "Q110990558",
         "wheat": "Q12106",
         "wheat ear": "Q107563349",

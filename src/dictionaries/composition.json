@@ -28,6 +28,7 @@
     "Bimetallic: nickel brass clad nickel centre in copper-nickel ring": "Q110867743",
     "Bimetallic: stainless steel centre in bronze plated steel ring": "Q110868008",
     "Brass": "Q39782",
+    "Brass (58% Copper, 40% Zinc, 2% Manganese)": "Q111679507",
     "Brass clad steel": "Q111475488",
     "Brass plated steel": "Q110867986",
     "Brass plated steel (72.5% Copper, 27.5% Steel)": "Q111076597",
@@ -68,6 +69,7 @@
     "Nickel plated zinc": "Q111020388",
     "Nickel-steel": "Q110981410",
     "Nordic gold": "Q112260",
+    "Plated steel (brass and copper plated)": "Q111679211",
     "Silver (.900)": "Q110861802",
     "Stainless steel": "Q172587",
     "Zinc": "Q758"
