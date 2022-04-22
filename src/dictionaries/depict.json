@@ -153,6 +153,9 @@
         "Radio transmitter antenna invented by Marconi": "Q111398782",
         "Unique Forms in the Continuity of Space": "Q933665"
     },
+    "Jordan": {
+        "King Hussein bin Talal": "Q146906"
+    },
     "Kenya": {
         "National arms": "Q201068",
         "President Mzee Jomo Kenyata": "Q173563"
@@ -174,7 +177,10 @@
     "Papua New Guinea": {
         "Coat of Arms of Papua New Guinea": "Q274170"
     },
-    "Paraguay": {},
+    "Paraguay": {
+        "Marshal General Francisco Solano Lopez": "Q37677",
+        "National Heroes Pantheon": "Q3500546"
+    },
     "Peru": {
         "arms of Peru": "Q4530"
     },
@@ -278,7 +284,6 @@
         "Ant\u00f4nio Carlos Gomes": "Q263855",
         "Apollo 11 Mission Insignia": "Q110989224",
         "Ara macao": "Q243761",
-        "Arms": "Q213029",
         "Arms of Colombia": "Q235826",
         "Arms of South Africa with the motto &quot;Ex Unitate Vires&quot;": "Q28134642",
         "Artigas": "Q252847",

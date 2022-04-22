@@ -43,23 +43,31 @@ def get_coin_statements(coin_type_id):
     except Exception:
         traceback.print_exc()
         text = coin_details["composition"]["text"]
-        print(
-            f"""
+        metal_qs = f"""
             CREATE
             LAST|Len|"{text}"
             LAST|Den|"metallic material used for coins"  """
-        )
         for key, value in dicts["composition"].items():
             if key.lower() in text.lower():
-                print(
-                    f"""
+                metal_qs = (
+                    metal_qs
+                    + f"""
             LAST|P527|{value}{ref}"""
                 )
-        if "Bimetallic" in text:
-            print(f"""LAST|P279|Q110983998{ref}""")
-        else:
-            print(f"""LAST|P279|Q214609{ref}""")
 
+        if "Bimetallic" in text:
+            metal_qs = (
+                metal_qs
+                + f"""
+            LAST|P279|Q110983998{ref}"""
+            )
+        else:
+            metal_qs = (
+                metal_qs
+                + f"""
+            LAST|P279|Q214609{ref}"""
+            )
+        print(render_qs_url(metal_qs))
         dicts["composition"] = add_key(dicts["composition"], text)
 
         with open("src/dictionaries/composition.json", "w+") as f:
