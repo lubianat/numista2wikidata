@@ -7,7 +7,10 @@ from helper import *
 from dictionaries.all import *
 
 
-sparqlwd = SPARQLWrapper("https://query.wikidata.org/sparql")
+sparqlwd = SPARQLWrapper(
+    "https://query.wikidata.org/sparql",
+    agent="numista2wikidata (https://github.com/lubianat/numista2wikidata)",
+)
 
 query = """
 SELECT DISTINCT
