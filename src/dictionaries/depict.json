@@ -117,7 +117,8 @@
         "State emblem of the German Democratic Republic": "Q48168"
     },
     "Germany, Federal Republic of": {
-        "Brandenburg Gate": "Q82425"
+        "Brandenburg Gate": "Q82425",
+        "the eagle": "Q111080575"
     },
     "Greece": {
         "Constantine Kanaris": "Q365201",
@@ -190,6 +191,9 @@
     "Poland": {
         "Polish eagle": "Q170496",
         "arms of Poland ": "Q170496"
+    },
+    "Portugal": {
+        "Portuguese coat of arms": "Q200195"
     },
     "Samoa": {
         "Bust 1/4 to left, date below.": "Q57523",
@@ -272,6 +276,7 @@
         " rice ": "Q161426",
         " rye stalk": "Q12099",
         " spear ": "Q44475",
+        " sun ": "Q525",
         " twig ": "Q11162356",
         " water ": "Q283",
         "A globe": "Q2",
@@ -364,6 +369,7 @@
         "Liberty bust ": "Q4483461",
         "Liberty head left": "Q4483461",
         "Lochnera rosea": "Q161093",
+        "Lotus flowers": "Q16528",
         "Lusinian Cross": "Q528186",
         "Lynx lynx balcanicus": "Q2164570",
         "L\u00e9opold II ": "Q12967",
@@ -383,6 +389,7 @@
         "Monstera deliciosa": "Q161077",
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
+        "National Flower": "Q162849",
         "National arms": "Q207785",
         "Orange blosso": "Q3355098",
         "Orange blossom": "Q1152711",
@@ -421,6 +428,7 @@
         "Southern Cross": "Q10542",
         "Soy Bean Plant": "Q11006",
         "Soybean": "Q11006",
+        "Sphenodon punctatus": "Q3007063",
         "St. Stephen&#039;s Cathedral": "Q5943",
         "Star with circle on it on pole with sprigs and stalks to left.": "Q188320",
         "Star with wreath in background.": "Q188320",
@@ -440,6 +448,7 @@
         "Torch": "Q327954",
         "Tr\u00fcmmerfrau": "Q641166",
         "Turkish crescent": "Q3592503",
+        "Unique Forms in the Continuity of Space": "Q933665",
         "Value and date within wrea": "Q12106",
         "Value and date within wreat": "Q26006",
         "Value and date within wreath": "Q3592503",
@@ -452,6 +461,7 @@
         "a crown": "Q170984",
         "a map,": "Q4006",
         "a star with a circle": "Q188320",
+        "allegory of republic": "Q2839015",
         "allegory of the Republic ": "Q4483461",
         "alpine rose": "Q1341190",
         "andean condor": "Q170598",
@@ -472,7 +482,7 @@
         "caribou": "Q39624",
         "child head": "Q7569",
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
-        "coat of arms": "Q207701",
+        "coat of arms": "Q208656",
         "coffee": "Q156354",
         "cotton": "Q719312",
         "cows": "Q830",
@@ -483,6 +493,7 @@
         "edelweiss": "Q178265",
         "effigy of liberty": "Q4483461",
         "emblem of the State of Israel": "Q184991",
+        "female figure": "Q467",
         "female head": "Q111475236",
         "figure of Helvetia": "Q15317",
         "fishing net": "Q271598",
@@ -499,6 +510,7 @@
         "leaves": "Q33971",
         "leek": "Q1807269",
         "leek, the emblem of Wales": "Q1807269",
+        "leopard": "Q34706",
         "liberty figure": "Q4483461",
         "linden branch": "Q163760",
         "lion": "Q140",
@@ -517,6 +529,7 @@
         "paddy": "Q161426",
         "palm tree": "Q14080",
         "quill": "Q4063215",
+        "radiant sun": "Q875322",
         "radio wave": "Q4262",
         "rising sun": "Q193294",
         "rooster": "Q2488240",
@@ -529,6 +542,7 @@
         "stringed harp": "Q47369",
         "sun ray": "Q875322",
         "the Sower": "Q739085",
+        "the eagle": "Q111080575",
         "tobacco": "Q181095",
         "towered crown": "Q429340",
         "tree": "Q10884",

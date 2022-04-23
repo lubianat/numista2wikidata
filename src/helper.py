@@ -35,8 +35,13 @@ def get_coin_statements(coin_type_id):
     value = coin_details["value"]["numeric_value"]
     min_year = coin_details["min_year"]
     max_year = coin_details["max_year"]
-    title_en = f"{coin_details['title']} coin ({min_year} - {max_year})"
-    title_pt = f"moeda de {coin_details['title']} ({min_year} - {max_year})"
+
+    if min_year == max_year:
+        date_range = min_year
+    else:
+        date_range = f"{min_year} - {max_year}"
+    title_en = f"{coin_details['title']} coin ({date_range})"
+    title_pt = f"moeda de {coin_details['title']} ({date_range})"
 
     try:
         material = dicts["composition"][coin_details["composition"]["text"]]
