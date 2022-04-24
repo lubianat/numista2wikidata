@@ -40,8 +40,10 @@ def get_coin_statements(coin_type_id):
         date_range = min_year
     else:
         date_range = f"{min_year} - {max_year}"
-    title_en = f"{coin_details['title']} coin ({date_range})"
-    title_pt = f"moeda de {coin_details['title']} ({date_range})"
+
+    coin_title = coin_details["title"].replace("&quot;", '"')
+    title_en = f"{coin_title} coin ({date_range})"
+    title_pt = f"moeda de {coin_title} ({date_range})"
 
     try:
         material = dicts["composition"][coin_details["composition"]["text"]]
@@ -230,7 +232,7 @@ def get_coin_statements(coin_type_id):
         to_print = to_print + f"""LAST|P279|Q110944598{ref}\n"""
     elif coin_details["type"] == "Circulating commemorative coin":
         to_print = to_print + f"""LAST|P279|Q110997090{ref}\n"""
-    print(to_print)
+
     return to_print
 
 
@@ -244,5 +246,6 @@ def get_details(coin_type_id):
         params={"lang": "en"},
         headers={"Numista-API-Key": api_key},
     )
+    response.encoding = "UTF-8"
     coin_details = response.json()
     return coin_details

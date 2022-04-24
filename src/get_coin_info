@@ -12,8 +12,6 @@ import webbrowser
 @click.option("--coin_type_id", prompt="The Numista ID")
 def main(coin_type_id: str):
     string = get_coin_statements(coin_type_id)
-
-    clipboard.copy(string)
     webbrowser.open_new_tab(render_qs_url(string))
     coin_details = get_details(coin_type_id)
     country_name = coin_details["issuer"]["name"]

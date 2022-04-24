@@ -247,9 +247,11 @@
         "badge of the Prince of Whales": "Q2899400"
     },
     "United States": {
+        "Abraham Lincoln": "Q91",
         "Camel&#039;s Hump Mountain": "Q5025846",
         "Charter Oak": "Q1067811",
-        "George Washington": "Q23"
+        "George Washington": "Q23",
+        "Lincoln Memorial": "Q213559"
     },
     "Uruguay": {
         "Artigas": "Q252847",
@@ -296,6 +298,7 @@
         "Austrian coat of arms": "Q160322",
         "Austrian flag": "Q46835",
         "Aztec calendar stone": "Q786806",
+        "Baudouin I": "Q12976",
         "Bauhinia blakeana": "Q378062",
         "Belgian Constitution": "Q633629",
         "Belvedere Palace": "Q211818",
@@ -338,6 +341,7 @@
         "Floriano Peixoto": "Q238688",
         "Flying Manchurian crane": "Q1991038",
         "Garcinia sessilis": "Q15391104",
+        "Gaucho": "Q210377",
         "General Jos\u00e9 Eduvigis D\u00edaz": "Q599092",
         "George IV State Diadem": "Q1750653",
         "George Washington": "Q23",
