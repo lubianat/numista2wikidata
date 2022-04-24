@@ -75,6 +75,7 @@
         "sprays,": "Q2923673"
     },
     "Chile": {
+        "Cardinal Ra\u00fal Silva Henr\u00edquez": "Q965283",
         "Mapuche": "Q178484",
         "andean condor": "Q170598",
         "arms of Chile": "Q233996",
@@ -83,15 +84,22 @@
     "Colombia": {
         "Arms of Colombia": "Q235826",
         "Chief Calarc\u00e1": "Q6400077",
-        "Frailej\u00f3n": "Q15596502"
+        "Frailej\u00f3n": "Q15596502",
+        "Sam\u00e1n tree": "Q259500",
+        "bust of Santander": "Q452017",
+        "holy tree of Guacari": "Q111709186"
     },
     "Croatia": {
         "arms of Croatia": "Q184252"
+    },
+    "Cuba": {
+        "cuban coat of arms": "Q242912"
     },
     "Cyprus": {
         "Zeno of Citium": "Q171303"
     },
     "Czech Republic": {
+        "Cathedral of Saints Peter and Paul on Petrov hill ": "Q45033",
         "Charles Bridges": "Q204871",
         "Vltava river": "Q131574"
     },
@@ -104,6 +112,9 @@
     },
     "Egypt": {
         "Tutankhamun": "Q9048095"
+    },
+    "Estonia": {
+        "map os Estonia": "Q111708950"
     },
     "Finland": {
         "Finnish lion": "Q111183003"
@@ -161,15 +172,24 @@
         "National arms": "Q201068",
         "President Mzee Jomo Kenyata": "Q173563"
     },
+    "Laos": {
+        "(1975-1991 version)": "Q111709249"
+    },
     "Luxembourg": {
         "His Royal Highness Grand Duke Henri": "Q16004"
     },
     "Malaysia": {
         "Congkak": "Q473986",
-        "Rebana": "Q3181140"
+        "Rebana": "Q3181140",
+        "destar siga": "Q111709126",
+        "sulur kacang": "Q111709132"
     },
     "Mozambique": {
         "central bank": "Q3363703"
+    },
+    "New Zealand": {
+        "Kowhai flower": "Q3241720",
+        "M\u0101ori koruru": "Q111708972"
     },
     "Nigeria": {
         "arms of Nigeria": "Q207512",
@@ -193,7 +213,11 @@
         "arms of Poland ": "Q170496"
     },
     "Portugal": {
-        "Portuguese coat of arms": "Q200195"
+        "Portuguese coat of arms": "Q200195",
+        "arms of Portugal": "Q200195"
+    },
+    "Romania": {
+        "coat of arms": "Q173213"
     },
     "Samoa": {
         "Bust 1/4 to left, date below.": "Q57523",
@@ -215,11 +239,17 @@
         "arum lily": "Q1945905"
     },
     "Spain": {
+        "Casas Colgadas": "Q2496001",
         "Dancer on stilts": "Q2919486",
+        "Don Quixote": "Q944201",
+        "Francisco Franco": "Q29179",
         "Juan Carlos I": "Q19943",
         "Porch of Revell\u00edn": "Q6032863",
+        "Spanish coat of arms": "Q170600",
         "arms of Spain": "Q170600",
-        "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160"
+        "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
+        "eagle of Saint John": "Q9098119",
+        "windmill": "Q38720"
     },
     "Tonga": {
         "king Tupou VI": "Q208497"
@@ -243,15 +273,18 @@
         "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808"
     },
     "United Kingdom": {
+        " Queen Victoria": "Q9439",
         "badge of the Prince of Wales": "Q2899400",
-        "badge of the Prince of Whales": "Q2899400"
+        "badge of the Prince of Whales": "Q2899400",
+        "seated figure of Brittania": "Q138396"
     },
     "United States": {
         "Abraham Lincoln": "Q91",
         "Camel&#039;s Hump Mountain": "Q5025846",
         "Charter Oak": "Q1067811",
         "George Washington": "Q23",
-        "Lincoln Memorial": "Q213559"
+        "Lincoln Memorial": "Q213559",
+        "Old Man of the Mountain": "Q1508103"
     },
     "Uruguay": {
         "Artigas": "Q252847",
@@ -265,7 +298,9 @@
         "gazelle": "Q838554"
     },
     "global": {
+        " Lethrinus nebulosus": "Q1047635",
         " Pedro I ": "Q939",
+        " Queen Victoria": "Q9439",
         " bible ": "Q1845",
         " blossom ": "Q506",
         " cog ": "Q143873",
@@ -277,11 +312,13 @@
         " maple ": "Q42292",
         " rice ": "Q161426",
         " rye stalk": "Q12099",
+        " ship ": "Q11446",
         " spear ": "Q44475",
         " sun ": "Q525",
         " twig ": "Q11162356",
         " water ": "Q283",
         "A globe": "Q2",
+        "Abraham Lincoln": "Q91",
         "Admiral Yi Sun-sin": "Q50184",
         "African lily": "Q161256",
         "Alberto Santos-Dumont": "Q313211",
@@ -306,6 +343,9 @@
         "Bust of a woman representing the Republic": "Q4483461",
         "Camel&#039;s Hump Mountain": "Q5025846",
         "Capybara": "Q131538",
+        "Casas Colgadas": "Q2496001",
+        "Castillo de la Fuerza": "Q1049302",
+        "Cathedral of Saints Peter and Paul on Petrov hill ": "Q45033",
         "Cattle herder": "Q5179781",
         "Cazique Tibiri\u00e7\u00e1": "Q6210522",
         "Celtic harp": "Q1288250",
@@ -318,9 +358,9 @@
         "China's emblem": "Q187327",
         "Chrysanthemum": "Q59882",
         "Clothing": "Q11460",
-        "Coat of Arms (Star with circle ": "Q188320",
         "Coat of Arms of Papua New Guinea": "Q274170",
         "Colombia coat of arms": "Q235826",
+        "Congkak": "Q473986",
         "Cross with rosettes": "Q392371",
         "Czech Lion": "Q107477800",
         "D. Jo\u00e3o III, King of Portugal": "Q216789",
@@ -329,6 +369,7 @@
         "Dasypus hybridus": "Q1767476",
         "Dianthus caryophyllus": "Q158984",
         "Diogo Ant\u00f4nio Feij\u00f3": "Q1791593",
+        "Don Quixote": "Q944201",
         "Duke of Caxias": "Q712089",
         "Effigy of the Liberty": "Q4483461",
         "Effigy of the Republic": "Q4483461",
@@ -340,6 +381,8 @@
         "Flavius amphitheatre": "Q10285",
         "Floriano Peixoto": "Q238688",
         "Flying Manchurian crane": "Q1991038",
+        "Frailej\u00f3n": "Q15596502",
+        "Francisco Franco": "Q29179",
         "Garcinia sessilis": "Q15391104",
         "Gaucho": "Q210377",
         "General Jos\u00e9 Eduvigis D\u00edaz": "Q599092",
@@ -372,6 +415,7 @@
         "Leptotes bicolor": "Q1600726",
         "Liberty bust ": "Q4483461",
         "Liberty head left": "Q4483461",
+        "Lincoln Memorial": "Q213559",
         "Lochnera rosea": "Q161093",
         "Lotus flowers": "Q16528",
         "Lusinian Cross": "Q528186",
@@ -393,6 +437,7 @@
         "Monstera deliciosa": "Q161077",
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
+        "M\u0101ori koruru": "Q111708972",
         "National Flower": "Q162849",
         "National arms": "Q207785",
         "Orange blosso": "Q3355098",
@@ -408,6 +453,7 @@
         "Polish eagle": "Q170496",
         "Porch of Revell\u00edn": "Q6032863",
         "Portrait of Liberty facing right": "Q4483461",
+        "Portuguese coat of arms": "Q200195",
         "Protea flower": "Q1930962",
         "Prunus mume": "Q157763",
         "Puma concolor": "Q35255",
@@ -426,12 +472,14 @@
         "Ruy Barbosa": "Q916935",
         "Sailing ship": "Q170483",
         "Sailing ship, birds to the left, stars in the sky.": "Q10542",
+        "Sam\u00e1n tree": "Q259500",
         "Ship, denomination below, two dates divided at top.": "Q516239",
         "Somali Pigeon": "Q524321",
         "South African coat of arms": "Q203330",
         "Southern Cross": "Q10542",
         "Soy Bean Plant": "Q11006",
         "Soybean": "Q11006",
+        "Spanish coat of arms": "Q170600",
         "Sphenodon punctatus": "Q3007063",
         "St. Stephen&#039;s Cathedral": "Q5943",
         "Star with circle on it on pole with sprigs and stalks to left.": "Q188320",
@@ -446,6 +494,7 @@
         "Susan B. Anthony": "Q192245",
         "The Coat of Arms of the Republic of Brazil": "Q188320",
         "The national arms of Mexico": "Q170867",
+        "Theobroma cacao": "Q42385",
         "Tobias Barreto de Meneses": "Q5258787",
         "Topographical map": "Q216526",
         "Topographical map of Brazil": "Q110996871",
@@ -473,6 +522,7 @@
         "arms of Chile": "Q233996",
         "arms of Costa Rica": "Q206398",
         "arms of Peru": "Q4530",
+        "arms of Portugal": "Q200195",
         "arms of Singapore": "Q131947",
         "arms of Spain": "Q170600",
         "arum lily": "Q1945905",
@@ -483,17 +533,20 @@
         "bird in flight": "Q1991038",
         "birds": "Q5113",
         "bread fruit": "Q14677",
+        "caravel": "Q169560",
         "caribou": "Q39624",
         "child head": "Q7569",
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
-        "coat of arms": "Q208656",
         "coffee": "Q156354",
         "cotton": "Q719312",
         "cows": "Q830",
         "crowned shield of Hungary": "Q181137",
+        "cuban coat of arms": "Q242912",
         "dam on the Acaray River": "Q3433454",
         "date palm": "Q25292",
+        "destar siga": "Q111709126",
         "dolphin": "Q7369",
+        "eagle of Saint John": "Q9098119",
         "edelweiss": "Q178265",
         "effigy of liberty": "Q4483461",
         "emblem of the State of Israel": "Q184991",
@@ -502,11 +555,14 @@
         "figure of Helvetia": "Q15317",
         "fishing net": "Q271598",
         "flower": "Q506",
+        "galley": "Q188924",
         "gentian": "Q144682",
         "gentian ": "Q16974943",
         "grape": "Q30046",
         "grapes": "Q10978",
+        "hibiscus flower": "Q157124",
         "hippocampus coronatus": "Q2219854",
+        "holy tree of Guacari": "Q111709186",
         "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
         "laurel wreath": "Q734844",
         "laurels": "Q26006",
@@ -516,6 +572,7 @@
         "leek, the emblem of Wales": "Q1807269",
         "leopard": "Q34706",
         "liberty figure": "Q4483461",
+        "lighthouse": "Q39715",
         "linden branch": "Q163760",
         "lion": "Q140",
         "male head": "Q8441",
@@ -535,25 +592,29 @@
         "quill": "Q4063215",
         "radiant sun": "Q875322",
         "radio wave": "Q4262",
+        "rampant lion": "Q3241798",
         "rising sun": "Q193294",
         "rooster": "Q2488240",
         "ruins of Humait\u00e1": "Q5404163",
+        "seated figure of Brittania": "Q138396",
         "shield": "Q131559",
         "snowdrop flower": "Q105415",
         "soldiers": "Q4991371",
         "sprays,": "Q2923673",
         "sprig": "Q2923673",
         "stringed harp": "Q47369",
+        "sulur kacang": "Q111709132",
         "sun ray": "Q875322",
         "the Sower": "Q739085",
-        "the eagle": "Q111080575",
         "tobacco": "Q181095",
         "towered crown": "Q429340",
         "tree": "Q10884",
+        "trident": "Q271628",
         "vanilla": "Q162044",
         "verse of the first national coin": "Q110990558",
         "wheat": "Q12106",
         "wheat ear": "Q107563349",
-        "wheatear": "Q107563349"
+        "wheatear": "Q107563349",
+        "windmill": "Q38720"
     }
 }

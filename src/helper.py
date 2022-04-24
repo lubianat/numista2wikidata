@@ -19,18 +19,7 @@ def get_coin_statements(coin_type_id):
 
     currency_name = coin_details["value"]["currency"]["full_name"]
 
-    try:
-        currency = dicts["currency"][currency_name].replace("Q", "U")
-    except KeyError:
-        traceback.print_exc()
-        dicts["currency"] = add_key(dicts["currency"], currency_name)
-
-        with open("src/dictionaries/currency.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    dicts["currency"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+    currency = get_currency_id(currency_name)
 
     value = coin_details["value"]["numeric_value"]
     min_year = coin_details["min_year"]
@@ -45,44 +34,9 @@ def get_coin_statements(coin_type_id):
     title_en = f"{coin_title} coin ({date_range})"
     title_pt = f"moeda de {coin_title} ({date_range})"
 
-    try:
-        material = dicts["composition"][coin_details["composition"]["text"]]
-    except Exception:
-        traceback.print_exc()
-        text = coin_details["composition"]["text"]
-        metal_qs = f"""
-            CREATE
-            LAST|Len|"{text}"
-            LAST|Den|"metallic material used for coins"  """
-        for key, value in dicts["composition"].items():
-            if key.lower() in text.lower():
-                metal_qs = (
-                    metal_qs
-                    + f"""
-            LAST|P527|{value}{ref}"""
-                )
+    metal_name = coin_details["composition"]["text"]
 
-        if "Bimetallic" in text:
-            metal_qs = (
-                metal_qs
-                + f"""
-            LAST|P279|Q110983998{ref}"""
-            )
-        else:
-            metal_qs = (
-                metal_qs
-                + f"""
-            LAST|P279|Q214609{ref}"""
-            )
-        print(render_qs_url(metal_qs))
-        dicts["composition"] = add_key(dicts["composition"], text)
-
-        with open("src/dictionaries/composition.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    dicts["composition"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+    material = get_material_id(ref, metal_name)
 
     country = dicts["issuer"][coin_details["issuer"]["name"]]
     country_name = coin_details["issuer"]["name"]
@@ -98,7 +52,7 @@ def get_coin_statements(coin_type_id):
                 mints.append(dicts["mint"][mint["name"]])
             except Exception:
                 traceback.print_exc()
-                dicts["composition"] = add_key(dicts["mint"], mint["name"])
+                dicts["mint"] = add_key(dicts["mint"], mint["name"])
                 with open("src/dictionaries/mint.json", "w+") as f:
                     f.write(
                         json.dumps(
@@ -148,55 +102,13 @@ def get_coin_statements(coin_type_id):
     except:
         pass
 
-    try:
-        engraver = ""
+    if "engravers" in coin_details["obverse"]:
         for engraver in coin_details["obverse"]["engravers"]:
-            engraver_qid = dicts["engraver"][engraver]
-            to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q257418{ref}\n"""
-    except KeyError as e:
-        traceback.print_exc()
+            to_print = update_engraver(to_print, ref, engraver, side="obverse")
 
-        if engraver != "":
-            qs = f"""
-            CREATE
-            LAST|Len|"{engraver}"
-            LAST|Den|"engraver"
-            LAST|P31|Q5
-            LAST|P106|Q329439{ref}  """
-            print(render_qs_url(qs))
-            dicts["engraver"] = add_key(dicts["engraver"], engraver)
-
-            with open("src/dictionaries/engraver.json", "w+") as f:
-                f.write(
-                    json.dumps(
-                        dicts["engraver"], indent=4, ensure_ascii=False, sort_keys=True
-                    )
-                )
-
-    try:
-        engraver = ""
-        for engraver in coin_details["reverse"]["engravers"]:
-            engraver_qid = dicts["engraver"][engraver]
-            to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|Q1542661{ref}\n"""
-    except KeyError as e:
-        traceback.print_exc()
-
-        if engraver != "":
-            qs = f"""
-                CREATE
-                LAST|Len|"{engraver}"
-                LAST|Den|"engraver"
-                LAST|P31|Q5
-                LAST|P106|Q329439{ref}  """
-            print(render_qs_url(qs))
-            dicts["engraver"] = add_key(dicts["engraver"], engraver)
-
-            with open("src/dictionaries/engraver.json", "w+") as f:
-                f.write(
-                    json.dumps(
-                        dicts["engraver"], indent=4, ensure_ascii=False, sort_keys=True
-                    )
-                )
+    if "engravers" in coin_details["reverse"]:
+        for engraver in coin_details["obverse"]["engravers"]:
+            to_print = update_engraver(to_print, ref, engraver, side="reverse")
 
     # Parse possible depicts
     print("=== Obverse ===")
@@ -232,6 +144,97 @@ def get_coin_statements(coin_type_id):
         to_print = to_print + f"""LAST|P279|Q110944598{ref}\n"""
     elif coin_details["type"] == "Circulating commemorative coin":
         to_print = to_print + f"""LAST|P279|Q110997090{ref}\n"""
+
+    return to_print
+
+
+def get_currency_id(currency_name):
+    if currency_name in dicts["currency"]:
+        currency = dicts["currency"][currency_name].replace("Q", "U")
+    else:
+        dicts["currency"] = add_key(dicts["currency"], currency_name)
+
+        with open("src/dictionaries/currency.json", "w+") as f:
+            f.write(
+                json.dumps(
+                    dicts["currency"], indent=4, ensure_ascii=False, sort_keys=True
+                )
+            )
+
+        currency = get_currency_id(currency_name)
+
+    return currency
+
+
+def get_material_id(ref, metal_name):
+    if metal_name in dicts["composition"]:
+        material_id = dicts["composition"][metal_name]
+        return material_id
+
+    else:
+        metal_qs = f"""
+            CREATE
+            LAST|Len|"{metal_name}"
+            LAST|Den|"metallic material used for coins"  """
+        for key, value in dicts["composition"].items():
+            if key.lower() in metal_name.lower():
+                metal_qs = (
+                    metal_qs
+                    + f"""
+            LAST|P527|{value}{ref}"""
+                )
+        if "Bimetallic" in metal_name:
+            metal_qs = (
+                metal_qs
+                + f"""
+            LAST|P279|Q110983998{ref}"""
+            )
+        else:
+            metal_qs = (
+                metal_qs
+                + f"""
+            LAST|P279|Q214609{ref}"""
+            )
+        print(render_qs_url(metal_qs))
+        dicts["composition"] = add_key(dicts["composition"], metal_name)
+
+        with open("src/dictionaries/composition.json", "w+") as f:
+            f.write(
+                json.dumps(
+                    dicts["composition"], indent=4, ensure_ascii=False, sort_keys=True
+                )
+            )
+        material_id = get_material_id(ref, metal_name)
+        return material_id
+
+
+def update_engraver(to_print, ref, engraver, side="obverse"):
+
+    if side == "obverse":
+        side_id = "Q257418"
+    elif side == "reverse":
+        side_id = "Q1542661"
+    if engraver in dicts["engraver"]:
+        engraver_qid = dicts["engraver"][engraver]
+        side_id = "Q257418"
+        to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|{side_id}{ref}\n"""
+    else:
+        qs = f"""
+                CREATE
+                LAST|Len|"{engraver}"
+                LAST|Den|"engraver"
+                LAST|P31|Q5
+                LAST|P106|Q329439{ref}  """
+        print(render_qs_url(qs))
+        dicts["engraver"] = add_key(dicts["engraver"], engraver)
+
+        with open("src/dictionaries/engraver.json", "w+") as f:
+            f.write(
+                json.dumps(
+                    dicts["engraver"], indent=4, ensure_ascii=False, sort_keys=True
+                )
+            )
+        to_print = update_engraver(to_print, ref, engraver, side="obverse")
 
     return to_print
 
