@@ -165,6 +165,9 @@
         "Radio transmitter antenna invented by Marconi": "Q111398782",
         "Unique Forms in the Continuity of Space": "Q933665"
     },
+    "Jamaica": {
+        "Coat of Arms within beaded circle.": "Q112249197"
+    },
     "Jordan": {
         "King Hussein bin Talal": "Q146906"
     },
@@ -183,6 +186,12 @@
         "Rebana": "Q3181140",
         "destar siga": "Q111709126",
         "sulur kacang": "Q111709132"
+    },
+    "Malta": {
+        "Great Siege Monument": "Q38604194"
+    },
+    "Mauritius": {
+        "Seewoosagur Ramgoolam": "Q2166580"
     },
     "Mozambique": {
         "central bank": "Q3363703"
@@ -203,7 +212,8 @@
         "National Heroes Pantheon": "Q3500546"
     },
     "Peru": {
-        "arms of Peru": "Q4530"
+        "arms of Peru": "Q4530",
+        "emblem of Peru": "Q4530"
     },
     "Philippines": {
         "Jose Rizal": "Q1500"
@@ -431,6 +441,7 @@
         "Mapuche": "Q178484",
         "Marajoara": "Q16494170",
         "Marianne": "Q325956",
+        "Marshal General Francisco Solano Lopez": "Q37677",
         "Marshal Jos\u00e9 F\u00e9lix Estigarribia": "Q379670",
         "Marshall Luiz Alves de Lima": "Q712089",
         "Martim Affonso da Sousa": "Q704141",
@@ -441,13 +452,17 @@
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
         "M\u0101ori koruru": "Q111708972",
         "National Flower": "Q162849",
+        "National Heroes Pantheon": "Q3500546",
         "National arms": "Q207785",
+        "Opishocomus hoazin": "-",
+        "Opisthocomus hoazin": "Q188660",
         "Orange blosso": "Q3355098",
         "Orange blossom": "Q1152711",
         "Ornithoptera paradisea": "Q1756827",
         "Oswaldo Gon\u00e7alves Cruz": "Q979554",
         "Padre Jos\u00e9 de Anchieta": "Q317126",
         "Palm tree with seven leaves and two baskets with dates": "Q25292",
+        "Passiflora": "Q161185",
         "Pedro Alvares Cabral": "Q174432",
         "Peony blossom": "Q163076",
         "Phrygian capped Liberty Head": "Q4483461",
@@ -534,12 +549,14 @@
         "basket with dates": "Q1652093",
         "bird in flight": "Q1991038",
         "birds": "Q5113",
+        "boat with outrigger": "Q639140",
         "bread fruit": "Q14677",
         "caravel": "Q169560",
         "caribou": "Q39624",
         "child head": "Q7569",
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
         "coffee": "Q156354",
+        "cornucopia": "Q332682",
         "cotton": "Q719312",
         "cows": "Q830",
         "crowned shield of Hungary": "Q181137",
@@ -551,6 +568,7 @@
         "eagle of Saint John": "Q9098119",
         "edelweiss": "Q178265",
         "effigy of liberty": "Q4483461",
+        "emblem of Peru": "Q4530",
         "emblem of the State of Israel": "Q184991",
         "female figure": "Q467",
         "female head": "Q111475236",
@@ -582,6 +600,8 @@
         "male head": "Q8441",
         "maple tree": "Q59772474",
         "monogram RI for the Italian Republic": "Q111080490",
+        "moon": "Q405",
+        "mountain": "Q8502",
         "national emblem of Mexico": "Q170867",
         "oak": "Q12004",
         "oat stalk": "Q12104",
@@ -600,6 +620,7 @@
         "rising sun": "Q193294",
         "rooster": "Q2488240",
         "ruins of Humait\u00e1": "Q5404163",
+        "sailboat": "Q1075310",
         "seated figure of Brittania": "Q138396",
         "shield": "Q131559",
         "snowdrop flower": "Q105415",
@@ -607,7 +628,9 @@
         "sprays,": "Q2923673",
         "sprig": "Q2923673",
         "stringed harp": "Q47369",
+        "sugar cane": "Q17136949",
         "sulur kacang": "Q111709132",
+        "sun": "Q525",
         "sun ray": "Q875322",
         "the Sower": "Q739085",
         "tobacco": "Q181095",
@@ -616,6 +639,7 @@
         "trident": "Q271628",
         "vanilla": "Q162044",
         "verse of the first national coin": "Q110990558",
+        "vine leaves": "Q30046",
         "wheat": "Q12106",
         "wheat ear": "Q107563349",
         "wheatear": "Q107563349",

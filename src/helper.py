@@ -38,8 +38,19 @@ def get_coin_statements(coin_type_id):
 
     material = get_material_id(ref, metal_name)
 
-    country = dicts["issuer"][coin_details["issuer"]["name"]]
     country_name = coin_details["issuer"]["name"]
+
+    if country_name not in dicts["issuer"]:
+        dicts["issuer"] = add_key(dicts["issuer"], country_name)
+        with open("src/dictionaries/mint.json", "w+") as f:
+                    f.write(
+                        json.dumps(
+                            dicts["issuer"], indent=4, ensure_ascii=False, sort_keys=True
+                        )
+                    )
+
+
+    country = dicts["issuer"][coin_details["issuer"]["name"]]
     diameter = coin_details["size"]
     weight = coin_details["weight"]
     shape = dicts["shapes"][coin_details["shape"]]
