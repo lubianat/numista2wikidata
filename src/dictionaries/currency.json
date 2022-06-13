@@ -1,5 +1,6 @@
 {
     "Austral (1985-1991)": "Q781218",
+    "Baht (1897-date)": "Q177882",
     "CFA franc (1958-date)": "Q861690",
     "CFA franc (French West Africa, 1944-1958)": "Q191511",
     "CFP Franc (1945-date)": "Q214393",
@@ -49,6 +50,7 @@
     "Krone (1875-date)": "Q132643",
     "Kuna (1994-date)": "Q26360",
     "Lao PDR Kip (1979-date)": "Q111182533",
+    "Lebanese pound (1939-date)": "Q201880",
     "Lempira (1931-date)": "Q4719",
     "Lira (1861-2001)": "Q204992",
     "Lira (1972-2007)": "Q174467",
@@ -97,6 +99,7 @@
     "Ringgit (1967-date)": "Q163712",
     "Riyal (1973-date)": "Q206386",
     "Ruble (1961-1991)": "Q615640",
+    "Ruble (1991-1997)": "Q112309425",
     "Rupee": "Q178843",
     "Rupee (1862-1947)": "Q80524",
     "Rupee (1877-date)": "Q212967",
@@ -115,10 +118,12 @@
     "Sol (1863-1985)": "Q1606309",
     "Sucre (1884-2000)": "Q911562",
     "Tala (1967-date)": "Q4588",
+    "Third Won (2009-date)": "Q112309597",
     "Third gourde (1872-date)": "Q111583773",
     "Third lev (1962-1999)": "Q111692266",
     "Third modern drachma (1954-2001)": "Q111079828",
     "Third z&#322;oty (1949-1994)": "Q111708867",
     "Tolar (1991-2006)": "Q208133",
+    "US dollar (2003-date)": "Q4917",
     "Yen (1871-date)": "Q8146"
 }

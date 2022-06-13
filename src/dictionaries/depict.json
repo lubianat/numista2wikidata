@@ -8,7 +8,9 @@
     "Belgium": {
         "Baudouin I": "Q12976",
         "King Albert II ": "Q3911",
-        "Royal Monogram": "Q110990016"
+        "Royal Monogram": "Q110990016",
+        "arms of Belgium": "Q199614",
+        "monogram of King Leopold III": "Q112309554"
     },
     "Bolivia": {
         "National arms": "Q207785"
@@ -107,6 +109,9 @@
         "Socialist coat of arms (1961-1990 version)": "Q12056886",
         "crane": "Q178692"
     },
+    "Denmark": {
+        "heart": "Q1615029"
+    },
     "Ecuador": {
         "coat of arms": "Q244988"
     },
@@ -147,7 +152,8 @@
         "crowned shield of Hungary": "Q181137"
     },
     "India": {
-        "Ashoka lion": "Q3595955"
+        "Ashoka lion": "Q3595955",
+        "Jawaharlal Nehru": "Q1047"
     },
     "Indonesia": {
         "coat of arms": "Q142845"
@@ -178,6 +184,9 @@
     "Laos": {
         "(1975-1991 version)": "Q111709249"
     },
+    "Lebanon": {
+        "cedar tree": "Q61105"
+    },
     "Luxembourg": {
         "His Royal Highness Grand Duke Henri": "Q16004"
     },
@@ -193,6 +202,10 @@
     "Mauritius": {
         "Seewoosagur Ramgoolam": "Q2166580"
     },
+    "Mexico": {
+        "Josefa Ortiz de Dom\u00ednguez": "Q462142",
+        "National Arms": "Q170867"
+    },
     "Mozambique": {
         "central bank": "Q3363703"
     },
@@ -204,12 +217,17 @@
         "arms of Nigeria": "Q207512",
         "oil palm": "Q165403"
     },
+    "North Korea": {
+        "national emblem": "Q107158"
+    },
     "Papua New Guinea": {
         "Coat of Arms of Papua New Guinea": "Q274170"
     },
     "Paraguay": {
+        "Bernardino Caballero": "Q738679",
         "Marshal General Francisco Solano Lopez": "Q37677",
-        "National Heroes Pantheon": "Q3500546"
+        "National Heroes Pantheon": "Q3500546",
+        "sello de hacienda": "Q112309286"
     },
     "Peru": {
         "arms of Peru": "Q4530",
@@ -248,6 +266,12 @@
         "South Africa coat of arms with the motto &quot;Ex Unitate Vires&quot; ": "Q28134642",
         "arum lily": "Q1945905"
     },
+    "South Korea": {
+        "Dabotap Pagoda": "Q488758"
+    },
+    "Soviet Union": {
+        "State Emblem of the Soviet Union": "Q189925"
+    },
     "Spain": {
         "Casas Colgadas": "Q2496001",
         "Dancer on stilts": "Q2919486",
@@ -260,6 +284,16 @@
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
         "eagle of Saint John": "Q9098119",
         "windmill": "Q38720"
+    },
+    "Switzerland": {
+        "Libertas": "Q1129855"
+    },
+    "Thailand": {
+        "King Bhumibol Adulyadej": "Q855252",
+        "Wat Phra Mahathat Woramahawihan ": "Q2552354"
+    },
+    "Timor-Leste": {
+        "Tais pattern": "Q2388788"
     },
     "Tonga": {
         "king Tupou VI": "Q208497"
@@ -284,9 +318,11 @@
     },
     "United Kingdom": {
         " Queen Victoria": "Q9439",
+        "King George VI ": "Q280856",
         "badge of the Prince of Wales": "Q2899400",
         "badge of the Prince of Whales": "Q2899400",
-        "seated figure of Brittania": "Q138396"
+        "seated figure of Brittania": "Q138396",
+        "thrift&#039; plant": "Q21036"
     },
     "United States": {
         "Abraham Lincoln": "Q91",
@@ -311,6 +347,7 @@
         " Lethrinus nebulosus": "Q1047635",
         " Pedro I ": "Q939",
         " Queen Victoria": "Q9439",
+        " Wing": "Q161358",
         " bible ": "Q1845",
         " blossom ": "Q506",
         " cog ": "Q143873",
@@ -327,6 +364,7 @@
         " sun ": "Q525",
         " twig ": "Q11162356",
         " water ": "Q283",
+        "2nd portrait of Queen Elizabeth II": "Q112441940",
         "A gazelle above the date": "Q11575",
         "A globe": "Q2",
         "Abraham Lincoln": "Q91",
@@ -345,11 +383,13 @@
         "Ashoka lion": "Q3595955",
         "Austrian coat of arms": "Q160322",
         "Austrian flag": "Q46835",
+        "Azalea": "Q5986917",
         "Aztec calendar stone": "Q786806",
         "Baudouin I": "Q12976",
         "Bauhinia blakeana": "Q378062",
         "Belgian Constitution": "Q633629",
         "Belvedere Palace": "Q211818",
+        "Bernardino Caballero": "Q738679",
         "Brandenburg Gate": "Q82425",
         "Bust of a woman representing the Republic": "Q4483461",
         "Camel&#039;s Hump Mountain": "Q5025846",
@@ -388,6 +428,7 @@
         "Emilio Garrastazu Medici": "Q299165",
         "Epit\u00e1cio Pessoa": "Q311119",
         "Equestrian Statue of Marcus Aurelius": "Q907387",
+        "Eurasian wren": "Q25740",
         "Eurico Gaspar Dutra": "Q296679",
         "Fisher": "Q331432",
         "Flavius amphitheatre": "Q10285",
@@ -421,10 +462,14 @@
         "Jose Enrique Rodo": "Q734054",
         "Jos\u00e9 Bonif\u00e1cio de Andrada e Silva": "Q379631",
         "Juan Carlos I": "Q19943",
+        "Kaibauk": "Q1721383",
         "King Albert II ": "Q3911",
+        "King Bhumibol Adulyadej": "Q855252",
+        "King George VI ": "Q280856",
         "Laureate head": "Q40794959",
         "Laureate liberty bust": "Q4483461",
         "Leptotes bicolor": "Q1600726",
+        "Libertas": "Q1129855",
         "Liberty bust ": "Q4483461",
         "Liberty head left": "Q4483461",
         "Lincoln Memorial": "Q213559",
@@ -451,9 +496,9 @@
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
         "M\u0101ori koruru": "Q111708972",
-        "National Flower": "Q162849",
+        "National Coat of Arms": "Q199433",
         "National Heroes Pantheon": "Q3500546",
-        "National arms": "Q207785",
+        "Nautilus": "Q1324463",
         "Opishocomus hoazin": "-",
         "Opisthocomus hoazin": "Q188660",
         "Orange blosso": "Q3355098",
@@ -467,6 +512,7 @@
         "Peony blossom": "Q163076",
         "Phrygian capped Liberty Head": "Q4483461",
         "Piazza del Campidoglio": "Q34925",
+        "Platypus": "Q15343",
         "Polish eagle": "Q170496",
         "Porch of Revell\u00edn": "Q6032863",
         "Portrait of Liberty facing right": "Q4483461",
@@ -483,8 +529,6 @@
         "Rebana": "Q3181140",
         "Rhinoceros": "Q134657",
         "Rice plant": "Q161426",
-        "Royal Diadem": "Q1750653",
-        "Royal Monogram": "Q110990016",
         "Royal Protea": "Q1930962",
         "Ruy Barbosa": "Q916935",
         "Sailing ship": "Q170483",
@@ -503,12 +547,14 @@
         "Star with wreath in background.": "Q188320",
         "Stars at center surrounded by circle of stars.": "Q10542",
         "Stars in the center surrounded by a circle of stars, date below": "Q10542",
+        "State Emblem of the Soviet Union": "Q189925",
         "State emblem of Brazil": "Q188320",
         "State emblem of Yugoslavia": "Q2548879",
         "State emblem of the German Democratic Republic": "Q48168",
         "Sugar canes": "Q3391243",
         "Sugarcane": "Q3391243",
         "Susan B. Anthony": "Q192245",
+        "Tais pattern": "Q2388788",
         "The Coat of Arms of the Republic of Brazil": "Q188320",
         "The national arms of Mexico": "Q170867",
         "Theobroma cacao": "Q42385",
@@ -516,6 +562,7 @@
         "Topographical map": "Q216526",
         "Topographical map of Brazil": "Q110996871",
         "Torch": "Q327954",
+        "Tryzub": "Q199433",
         "Tr\u00fcmmerfrau": "Q641166",
         "Turkish crescent": "Q3592503",
         "Unique Forms in the Continuity of Space": "Q933665",
@@ -525,8 +572,10 @@
         "Velebit degenia": "Q2716037",
         "Vittorio Emanuele III": "Q150642",
         "Vltava river": "Q131574",
+        "Volodymyr the Great": "Q14974",
         "Vultur gryphus": "Q170598",
-        "Wing": "Q161358",
+        "Wat Phra Mahathat Woramahawihan ": "Q2552354",
+        "Yaroslav the Wise": "Q188943",
         "Zebu": "Q46889",
         "a crown": "Q170984",
         "a map,": "Q4006",
@@ -536,6 +585,7 @@
         "alpine rose": "Q1341190",
         "andean condor": "Q170598",
         "armillary sphere": "Q328720",
+        "arms of Belgium": "Q199614",
         "arms of Chile": "Q233996",
         "arms of Costa Rica": "Q206398",
         "arms of Peru": "Q4530",
@@ -553,8 +603,10 @@
         "bread fruit": "Q14677",
         "caravel": "Q169560",
         "caribou": "Q39624",
+        "cedar tree": "Q61105",
         "child head": "Q7569",
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
+        "coat of arms": "Q199433",
         "coffee": "Q156354",
         "cornucopia": "Q332682",
         "cotton": "Q719312",
@@ -581,6 +633,7 @@
         "gentian ": "Q16974943",
         "grape": "Q30046",
         "grapes": "Q10978",
+        "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808",
         "hibiscus flower": "Q157124",
         "hippocampus coronatus": "Q2219854",
         "holy tree of Guacari": "Q111709186",
@@ -599,9 +652,12 @@
         "lotus blossom": "Q16528",
         "male head": "Q8441",
         "maple tree": "Q59772474",
+        "monogram": "Q168346",
         "monogram RI for the Italian Republic": "Q111080490",
+        "monogram of King Leopold III": "Q112309554",
         "moon": "Q405",
         "mountain": "Q8502",
+        "national emblem": "Q107158",
         "national emblem of Mexico": "Q170867",
         "oak": "Q12004",
         "oat stalk": "Q12104",
@@ -622,8 +678,10 @@
         "ruins of Humait\u00e1": "Q5404163",
         "sailboat": "Q1075310",
         "seated figure of Brittania": "Q138396",
+        "sello de hacienda": "Q112309286",
         "shield": "Q131559",
         "snowdrop flower": "Q105415",
+        "soccer ball": "Q12252328",
         "soldiers": "Q4991371",
         "sprays,": "Q2923673",
         "sprig": "Q2923673",
@@ -633,16 +691,20 @@
         "sun": "Q525",
         "sun ray": "Q875322",
         "the Sower": "Q739085",
+        "the eagle": "Q111080575",
+        "thrift&#039; plant": "Q21036",
         "tobacco": "Q181095",
         "towered crown": "Q429340",
         "tree": "Q10884",
         "trident": "Q271628",
+        "two-headed eagle": "Q622964",
         "vanilla": "Q162044",
         "verse of the first national coin": "Q110990558",
         "vine leaves": "Q30046",
         "wheat": "Q12106",
         "wheat ear": "Q107563349",
         "wheatear": "Q107563349",
-        "windmill": "Q38720"
+        "windmill": "Q38720",
+        "wreath": "Q1201922"
     }
 }

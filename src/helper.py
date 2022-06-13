@@ -10,6 +10,11 @@ from wdcuration import add_key, render_qs_url
 
 
 def get_coin_statements(coin_type_id):
+    """
+    Retrieves formatted Quickstatements V2 commands given a Numista coin type ID.
+    Args:
+      coin_type_id (str): The numeric ID for the coin type on Numista.
+    """
     global dicts
 
     coin_details = get_details(coin_type_id)
@@ -42,7 +47,7 @@ def get_coin_statements(coin_type_id):
 
     if country_name not in dicts["issuer"]:
         dicts["issuer"] = add_key(dicts["issuer"], country_name)
-        with open("src/dictionaries/mint.json", "w+") as f:
+        with open("src/dictionaries/issuer.json", "w+") as f:
                     f.write(
                         json.dumps(
                             dicts["issuer"], indent=4, ensure_ascii=False, sort_keys=True
@@ -53,6 +58,15 @@ def get_coin_statements(coin_type_id):
     country = dicts["issuer"][coin_details["issuer"]["name"]]
     diameter = coin_details["size"]
     weight = coin_details["weight"]
+
+    if coin_details["shape"] not in dicts["shapes"]:
+        dicts["shapes"] = add_key(dicts["shapes"], coin_details["shape"] )
+        with open("src/dictionaries/shapes.json", "w+") as f:
+                    f.write(
+                        json.dumps(
+                            dicts["shapes"], indent=4, ensure_ascii=False, sort_keys=True
+                        )
+                    )
     shape = dicts["shapes"][coin_details["shape"]]
 
     try:
@@ -251,8 +265,12 @@ def update_engraver(to_print, ref, engraver, side="obverse"):
 
 
 def get_details(coin_type_id):
+    """
+    Gets details from the Numista API.
+    Args:
+      coin_type_id (str): The numeric ID for the coin type on Numista.
+    """
     api_key = "2GtYY2INUIgmEYynq7xAHTqRY01Us4dOXIf30mlA"
-    client_id = "231967"
     endpoint = "https://api.numista.com/api/v2"
 
     response = requests.get(

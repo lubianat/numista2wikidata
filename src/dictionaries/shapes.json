@@ -1,10 +1,11 @@
 {
+    "Decagonal (10-sided)": "Q184625",
+    "Dodecagonal (12-sided)": "Q212074",
+    "Equilateral curve heptagon (7-sided)": "Q188866",
+    "Hexagonal (6-sided)": "Q83043",
+    "Octagonal (8-sided)": "Q166080",
     "Round": "Q17278",
     "Round with a round hole": "Q111288537",
-    "Dodecagonal (12-sided)": "Q212074",
-    "Octagonal (8-sided)": "Q166080",
-    "Hexagonal (6-sided)": "Q83043",
-    "Equilateral curve heptagon (7-sided)":"Q188866",
-    "Decagonal (10-sided)":"Q184625"
-
+    "Scalloped (with 12 notches)": "Q112309234",
+    "Scalloped (with 8 notches)": "Q112309452"
 }
