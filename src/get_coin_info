@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-from helper import get_coin_statements, get_details
-import clipboard
-import click
-from wdcuration.wdcuration import add_key, render_qs_url
 import json
-from dictionaries.all import dicts
 import webbrowser
+
+import click
+import clipboard
+from wdcuration.wdcuration import add_key, render_qs_url
+
+from dictionaries.all import DICTS
+from helper import get_coin_statements, get_details
 
 
 @click.command()
@@ -17,22 +19,22 @@ def main(coin_type_id: str):
     country_name = coin_details["issuer"]["name"]
 
     def add_depict(country_name):
-        global dicts
+        global DICTS
         add_depict_bool = input("Add depicts? 1 = global, 2 = national, other = no :")
 
         if add_depict_bool == "1":
             string_to_add = input("String to add:")
-            dicts["depict"]["global"] = add_key(
-                dicts["depict"]["global"], string_to_add
+            DICTS["depict"]["global"] = add_key(
+                DICTS["depict"]["global"], string_to_add
             )
             add_depict(country_name)
         elif add_depict_bool == "2":
             string_to_add = input("String to add:")
 
-            if country_name not in dicts["depict"]:
-                dicts["depict"][country_name] = {}
-            dicts["depict"][country_name] = add_key(
-                dicts["depict"][country_name], string_to_add
+            if country_name not in DICTS["depict"]:
+                DICTS["depict"][country_name] = {}
+            DICTS["depict"][country_name] = add_key(
+                DICTS["depict"][country_name], string_to_add
             )
             add_depict(country_name)
 
@@ -42,7 +44,7 @@ def main(coin_type_id: str):
     add_depict(country_name)
 
     with open("src/dictionaries/depict.json", "w+") as f:
-        f.write(json.dumps(dicts["depict"], indent=4, sort_keys=True))
+        f.write(json.dumps(DICTS["depict"], indent=4, sort_keys=True))
 
     repeat = input("Rerun command? (y/n) ")
     if repeat == "y":

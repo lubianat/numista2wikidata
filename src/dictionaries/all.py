@@ -1,7 +1,7 @@
 import json
-import os, json
+import os
 
-dicts = {}
+DICTS = {}
 
 path_to_json = "src/dictionaries"
 json_files = [
@@ -11,4 +11,4 @@ json_files = [
 for json_file in json_files:
     keyword = json_file.split(".")[0]
     with open(f"src/dictionaries/{keyword}.json") as f:
-        dicts[keyword] = json.loads(f.read())
+        DICTS[keyword] = json.loads(f.read())

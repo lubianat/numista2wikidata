@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from helper import *
-from SPARQLWrapper import SPARQLWrapper, JSON
-from login_info import *
 import time
-from helper import *
-from dictionaries.all import *
 
+from SPARQLWrapper import JSON, SPARQLWrapper
+
+from dictionaries.all import *
+from helper import *
+from login_info import *
 
 sparqlwd = SPARQLWrapper(
     "https://query.wikidata.org/sparql",

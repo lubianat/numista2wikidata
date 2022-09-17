@@ -1,7 +1,7 @@
 import json
-from dictionaries.depict import *
-from dictionaries.all import *
 
+from dictionaries.all import *
+from dictionaries.depict import *
 
 with open("src/dictionaries/depict.json") as f:
 
