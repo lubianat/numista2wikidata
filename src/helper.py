@@ -19,7 +19,7 @@ def get_coin_statements(coin_type_id):
     global DICTS
 
     coin_details = get_details(coin_type_id)
-
+    print(coin_details)
     # Extract fields of interest
     ref = f'|S854|"https://en.numista.com/catalogue/type{str(coin_type_id)}.html"|S248|Q84602292'
 
@@ -132,8 +132,16 @@ def get_coin_statements(coin_type_id):
             to_print = update_engraver(to_print, ref, engraver, side="obverse")
 
     if "engravers" in coin_details["reverse"]:
-        for engraver in coin_details["obverse"]["engravers"]:
+        for engraver in coin_details["reverse"]["engravers"]:
             to_print = update_engraver(to_print, ref, engraver, side="reverse")
+
+    if "lettering_scripts" in coin_details["obverse"]:
+        for script in coin_details["obverse"]["lettering_scripts"]:
+            to_print = update_scripts(to_print, ref, script["name"], side="obverse")
+
+    if "lettering_scripts" in coin_details["reverse"]:
+        for script in coin_details["reverse"]["lettering_scripts"]:
+            to_print = update_scripts(to_print, ref, script["name"], side="reverse")
 
     # Parse possible depicts
     print("=== Obverse ===")
@@ -233,6 +241,29 @@ def get_material_id(ref, metal_name):
         return material_id
 
 
+def update_scripts(to_print, ref, script, side="obverse"):
+    if side == "obverse":
+        side_id = "Q257418"
+    elif side == "reverse":
+        side_id = "Q1542661"
+    if script in DICTS["scripts"]:
+        script_qid = DICTS["scripts"][script]
+        side_id = "Q257418"
+        to_print = to_print + f"""LAST|P9302|{script_qid}|P518|{side_id}{ref}\n"""
+    else:
+        DICTS["engraver"] = add_key(DICTS["scripts"], script)
+
+        with open("src/dictionaries/scripts.json", "w+") as f:
+            f.write(
+                json.dumps(
+                    DICTS["scripts"], indent=4, ensure_ascii=False, sort_keys=True
+                )
+            )
+        to_print = update_scripts(to_print, ref, script, side="obverse")
+
+    return to_print
+
+
 def update_engraver(to_print, ref, engraver, side="obverse"):
 
     if side == "obverse":
@@ -241,7 +272,6 @@ def update_engraver(to_print, ref, engraver, side="obverse"):
         side_id = "Q1542661"
     if engraver in DICTS["engraver"]:
         engraver_qid = DICTS["engraver"][engraver]
-        side_id = "Q257418"
         to_print = to_print + f"""LAST|P287|{engraver_qid}|P518|{side_id}{ref}\n"""
     else:
         qs = f"""

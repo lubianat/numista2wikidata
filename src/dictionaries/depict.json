@@ -219,6 +219,7 @@
         "oil palm": "Q165403"
     },
     "North Korea": {
+        "National Coat of Arms": "Q107158",
         "national emblem": "Q107158"
     },
     "Papua New Guinea": {
@@ -260,6 +261,9 @@
     },
     "Singapore": {
         "arms of Singapore": "Q131947"
+    },
+    "Slovakia": {
+        "Bratislava Castle": "Q593311"
     },
     "South Africa": {
         "Arms of South Africa with the motto &quot;Ex Unitate Vires&quot;": "Q28134642",
@@ -475,6 +479,7 @@
         "King George VI ": "Q280856",
         "Laureate head": "Q40794959",
         "Laureate liberty bust": "Q4483461",
+        "Laurel": "Q26006",
         "Leptotes bicolor": "Q1600726",
         "Libertas": "Q1129855",
         "Liberty bust ": "Q4483461",
@@ -504,7 +509,6 @@
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
         "M\u0101ori koruru": "Q111708972",
-        "National Coat of Arms": "Q199433",
         "National Flower": "Q162849",
         "National Heroes Pantheon": "Q3500546",
         "National arms": "Q188320",
@@ -617,7 +621,6 @@
         "cedar tree": "Q61105",
         "child head": "Q7569",
         "church of Santa Mar\u00eda de Palacio of Logro\u00f1o": "Q5117160",
-        "coat of arms": "Q208656",
         "coffee": "Q156354",
         "cornucopia": "Q332682",
         "cotton": "Q719312",
@@ -669,12 +672,14 @@
         "monogram of King Leopold III": "Q112309554",
         "moon": "Q405",
         "mountain": "Q8502",
+        "national emblem": "Q107158",
         "national emblem of Mexico": "Q170867",
         "oak": "Q12004",
         "oat stalk": "Q12104",
         "oil derrick": "Q12688575",
         "olive": "Q37083",
         "orange branch": "Q3355098",
+        "orangutan": "Q41050",
         "orchid ": "Q25308",
         "ornamental ring": "Q16494170",
         "ornamental wreath": "Q16494170",
