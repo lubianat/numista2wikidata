@@ -3,6 +3,7 @@
 Generates a Quickstaments command to create a particular coin type on Wikidata.
 """
 import json
+from tabnanny import verbose
 import webbrowser
 
 import click
@@ -14,15 +15,16 @@ from numista2wikidata.helper import get_coin_statements, get_details, add_depict
 
 @click.command(name="get")
 @click.argument("coin_type_id")
-def main(coin_type_id: str):
+@click.option("--details", "-d", is_flag=True, help="Print more output.")
+def main(coin_type_id: str, details: bool):
     """
     Generates a Quickstaments command to create a particular coin type on Wikidata.
     """
-    get_coin_info(coin_type_id)
+    get_coin_info(coin_type_id, details)
 
 
-def get_coin_info(coin_type_id):
-    string = get_coin_statements(coin_type_id)
+def get_coin_info(coin_type_id, details=False):
+    string = get_coin_statements(coin_type_id, details)
     webbrowser.open_new_tab(render_qs_url(string))
     coin_details = get_details(coin_type_id)
     country_name = coin_details["issuer"]["name"]

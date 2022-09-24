@@ -8,17 +8,20 @@ import requests
 from wdcuration import add_key, render_qs_url
 
 from dictionaries.all import DICTS
+import click
 
 
-def get_coin_statements(coin_type_id):
+def get_coin_statements(coin_type_id, details=False):
     """
     Retrieves formatted Quickstatements V2 commands given a Numista coin type ID.
     Args:
       coin_type_id (str): The numeric ID for the coin type on Numista.
+      details (bool)
     """
     global DICTS
 
     coin_details = get_details(coin_type_id)
+    click.echo(coin_details if details else None)
 
     # Extract fields of interest
     ref = f'|S854|"https://en.numista.com/catalogue/type{str(coin_type_id)}.html"|S248|Q84602292'
