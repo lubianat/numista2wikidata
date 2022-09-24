@@ -1,0 +1,8 @@
+wdcuration
+clipboard
+requests
+SPARQLWrapper
+click
+
+[tests]
+pytest

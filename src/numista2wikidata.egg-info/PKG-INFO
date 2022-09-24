@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: numista2wikidata
+Version: 0.0.2.dev0
+Summary: Integrate numista data to Wikidata on demand
+License: MIT
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# numista2wikidata
+
+Code to connect the numista database to Wikidata.
+
+Issuers and Engravers dictionary uses proprietary reconciliation by Xavier (numista) and thus are _not_ openly licensed. 
+
+All other content is available in CC0. 

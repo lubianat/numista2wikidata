@@ -19,7 +19,7 @@ def get_coin_statements(coin_type_id):
     global DICTS
 
     coin_details = get_details(coin_type_id)
-    print(coin_details)
+
     # Extract fields of interest
     ref = f'|S854|"https://en.numista.com/catalogue/type{str(coin_type_id)}.html"|S248|Q84602292'
 
@@ -49,11 +49,7 @@ def get_coin_statements(coin_type_id):
     if country_name not in DICTS["issuer"]:
         DICTS["issuer"] = add_key(DICTS["issuer"], country_name)
         with open("src/dictionaries/issuer.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    DICTS["issuer"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+            f.write(json.dumps(DICTS["issuer"], indent=4, ensure_ascii=False, sort_keys=True))
 
     country = DICTS["issuer"][coin_details["issuer"]["name"]]
     diameter = coin_details["size"]
@@ -62,11 +58,7 @@ def get_coin_statements(coin_type_id):
     if coin_details["shape"] not in DICTS["shapes"]:
         DICTS["shapes"] = add_key(DICTS["shapes"], coin_details["shape"])
         with open("src/dictionaries/shapes.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    DICTS["shapes"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+            f.write(json.dumps(DICTS["shapes"], indent=4, ensure_ascii=False, sort_keys=True))
     shape = DICTS["shapes"][coin_details["shape"]]
 
     try:
@@ -79,11 +71,7 @@ def get_coin_statements(coin_type_id):
                 traceback.print_exc()
                 DICTS["mint"] = add_key(DICTS["mint"], mint["name"])
                 with open("src/dictionaries/mint.json", "w+") as f:
-                    f.write(
-                        json.dumps(
-                            DICTS["mint"], indent=4, ensure_ascii=False, sort_keys=True
-                        )
-                    )
+                    f.write(json.dumps(DICTS["mint"], indent=4, ensure_ascii=False, sort_keys=True))
                 break
     except Exception:
         traceback.print_exc()
@@ -93,6 +81,7 @@ def get_coin_statements(coin_type_id):
     CREATE
     LAST|Len|"{title_en}"
     LAST|Den|"coin from {country_name}"
+    LAST|P31|Q113813711
     LAST|P279|Q41207
     LAST|P17|{country}{ref}
     LAST|P580|+{min_year}-00-00T00:00:00Z/9{ref}
@@ -115,11 +104,7 @@ def get_coin_statements(coin_type_id):
             DICTS["series"] = add_key(DICTS["series"], coin_details["series"])
 
             with open("src/dictionaries/series.json", "w+") as f:
-                f.write(
-                    json.dumps(
-                        DICTS["series"], indent=4, ensure_ascii=False, sort_keys=True
-                    )
-                )
+                f.write(json.dumps(DICTS["series"], indent=4, ensure_ascii=False, sort_keys=True))
 
     try:
         thickness = coin_details["thickness"]
@@ -188,11 +173,7 @@ def get_currency_id(currency_name):
         DICTS["currency"] = add_key(DICTS["currency"], currency_name)
 
         with open("src/dictionaries/currency.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    DICTS["currency"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+            f.write(json.dumps(DICTS["currency"], indent=4, ensure_ascii=False, sort_keys=True))
 
         currency = get_currency_id(currency_name)
 
@@ -232,11 +213,7 @@ def get_material_id(ref, metal_name):
         DICTS["composition"] = add_key(DICTS["composition"], metal_name)
 
         with open("src/dictionaries/composition.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    DICTS["composition"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+            f.write(json.dumps(DICTS["composition"], indent=4, ensure_ascii=False, sort_keys=True))
         material_id = get_material_id(ref, metal_name)
         return material_id
 
@@ -254,11 +231,7 @@ def update_scripts(to_print, ref, script, side="obverse"):
         DICTS["engraver"] = add_key(DICTS["scripts"], script)
 
         with open("src/dictionaries/scripts.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    DICTS["scripts"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+            f.write(json.dumps(DICTS["scripts"], indent=4, ensure_ascii=False, sort_keys=True))
         to_print = update_scripts(to_print, ref, script, side="obverse")
 
     return to_print
@@ -284,11 +257,7 @@ def update_engraver(to_print, ref, engraver, side="obverse"):
         DICTS["engraver"] = add_key(DICTS["engraver"], engraver)
 
         with open("src/dictionaries/engraver.json", "w+") as f:
-            f.write(
-                json.dumps(
-                    DICTS["engraver"], indent=4, ensure_ascii=False, sort_keys=True
-                )
-            )
+            f.write(json.dumps(DICTS["engraver"], indent=4, ensure_ascii=False, sort_keys=True))
         to_print = update_engraver(to_print, ref, engraver, side="obverse")
 
     return to_print
@@ -311,3 +280,26 @@ def get_details(coin_type_id):
     response.encoding = "UTF-8"
     coin_details = response.json()
     return coin_details
+
+
+def add_depict(country_name):
+    """
+    Adds depicts statements to the Quickstatements.
+    """
+    global DICTS
+    add_depict_bool = input("Add depicts? 1 = global, 2 = national, other = no :")
+
+    if add_depict_bool == "1":
+        string_to_add = input("String to add:")
+        DICTS["depict"]["global"] = add_key(DICTS["depict"]["global"], string_to_add)
+        add_depict(country_name)
+    elif add_depict_bool == "2":
+        string_to_add = input("String to add:")
+
+        if country_name not in DICTS["depict"]:
+            DICTS["depict"][country_name] = {}
+        DICTS["depict"][country_name] = add_key(DICTS["depict"][country_name], string_to_add)
+        add_depict(country_name)
+
+    else:
+        return 0

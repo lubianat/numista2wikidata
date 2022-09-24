@@ -1,4 +1,7 @@
 {
+    "Argentina": {
+        "Monumento al Lobo Marino": "Q6023237"
+    },
     "Austria": {
         "Austria coat of arms": "Q160322",
         "Austrian coat of arms": "Q160322",
@@ -212,6 +215,9 @@
     "Mozambique": {
         "central bank": "Q3363703"
     },
+    "Netherlands": {
+        "bust of Beatrix": "Q29574"
+    },
     "New Zealand": {
         "Kowhai flower": "Q3241720",
         "M\u0101ori koruru": "Q111708972"
@@ -257,6 +263,9 @@
     "Samoa": {
         "Bust 1/4 to left, date below.": "Q57523",
         "fautasi canoe": "Q42869480"
+    },
+    "Saudi Arabia": {
+        "Coat Of Arms": "Q200182"
     },
     "Seychelles": {
         "Arms": "Q213029"
@@ -311,6 +320,8 @@
         "king Tupou VI": "Q208497"
     },
     "Turkey": {
+        "Atat\u00fbrk": "Q5152",
+        "Crescent": "Q3592503",
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
         "Turkish crescent": "Q3592503",
         "Value and date within wrea": "Q12106",
@@ -354,6 +365,9 @@
         "A gazelle above the date": "Q11575",
         "Emblem of Central Bank of West African States": "Q111294347",
         "gazelle": "Q838554"
+    },
+    "Zambia": {
+        "Kenneth Kaunda": "Q105480"
     },
     "global": {
         " Lethrinus nebulosus": "Q1047635",
@@ -402,6 +416,7 @@
         "Belgian Constitution": "Q633629",
         "Belvedere Palace": "Q211818",
         "Bernardino Caballero": "Q738679",
+        "Bohor Reedbuck": "Q548442",
         "Brandenburg Gate": "Q82425",
         "Bust of a woman representing the Republic": "Q4483461",
         "Camel&#039;s Hump Mountain": "Q5025846",
@@ -479,6 +494,7 @@
         "Jos\u00e9 Bonif\u00e1cio de Andrada e Silva": "Q379631",
         "Juan Carlos I": "Q19943",
         "Kaibauk": "Q1721383",
+        "Kenneth Kaunda": "Q105480",
         "King Albert II ": "Q3911",
         "King Bhumibol Adulyadej": "Q855252",
         "King George VI ": "Q280856",
@@ -501,6 +517,7 @@
         "Map ": "Q4006",
         "Map of Country": "Q110996876",
         "Mapuche": "Q178484",
+        "Mar del Plata": "Q52607",
         "Marajoara": "Q16494170",
         "Marianne": "Q325956",
         "Marshal General Francisco Solano Lopez": "Q37677",
@@ -581,6 +598,7 @@
         "Topographical map": "Q216526",
         "Topographical map of Brazil": "Q110996871",
         "Torch": "Q327954",
+        "Trefoil": "Q905612",
         "Tryzub": "Q199433",
         "Tr\u00fcmmerfrau": "Q641166",
         "Turkish crescent": "Q3592503",
@@ -659,6 +677,7 @@
         "hibiscus flower": "Q157124",
         "hippocampus coronatus": "Q2219854",
         "holy tree of Guacari": "Q111709186",
+        "horseback": "Q179226",
         "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
         "laurel wreath": "Q734844",
         "laurels": "Q26006",

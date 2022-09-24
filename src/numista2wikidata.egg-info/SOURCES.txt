@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/numista2wikidata/__init__.py
+src/numista2wikidata/cli.py
+src/numista2wikidata/get_coin_info.py
+src/numista2wikidata/get_missing_coin_info.py
+src/numista2wikidata/helper.py
+src/numista2wikidata/login_info.py
+src/numista2wikidata.egg-info/PKG-INFO
+src/numista2wikidata.egg-info/SOURCES.txt
+src/numista2wikidata.egg-info/dependency_links.txt
+src/numista2wikidata.egg-info/entry_points.txt
+src/numista2wikidata.egg-info/not-zip-safe
+src/numista2wikidata.egg-info/requires.txt
+src/numista2wikidata.egg-info/top_level.txt

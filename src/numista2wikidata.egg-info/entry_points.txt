@@ -1,0 +1,2 @@
+[console_scripts]
+numis = numista2wikidata.cli:cli
