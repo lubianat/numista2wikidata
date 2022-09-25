@@ -1,6 +1,10 @@
 {
+    "Angola": {
+        "Five towers atop arms": "Q114207298"
+    },
     "Argentina": {
-        "Monumento al Lobo Marino": "Q6023237"
+        "Monumento al Lobo Marino": "Q6023237",
+        "Tucuman Building": "Q5364487"
     },
     "Austria": {
         "Austria coat of arms": "Q160322",
@@ -79,6 +83,9 @@
         "ornamental ring": "Q16494170",
         "ornamental wreath": "Q16494170",
         "sprays,": "Q2923673"
+    },
+    "Cayman Islands": {
+        "Schooner 'Kirk B'": "Q114210694"
     },
     "Chile": {
         "Cardinal Ra\u00fal Silva Henr\u00edquez": "Q965283",
@@ -164,7 +171,10 @@
     "Indonesia": {
         "coat of arms": "Q142845"
     },
-    "Ireland": {},
+    "Ireland": {
+        "Gaelic harp": "Q1288250",
+        "Irish Wolfhound": "Q38668"
+    },
     "Israel": {
         "Palm tree with seven leaves and two baskets with dates": "Q25292",
         "basket with dates": "Q1652093",
@@ -175,6 +185,7 @@
         "Mole Antonelliana": "Q201902",
         "Piazza del Campidoglio": "Q34925",
         "Radio transmitter antenna invented by Marconi": "Q111398782",
+        "Savoy Shield": "Q2862388",
         "Unique Forms in the Continuity of Space": "Q933665"
     },
     "Jamaica": {
@@ -216,6 +227,7 @@
         "central bank": "Q3363703"
     },
     "Netherlands": {
+        "Queen Beatrix": "Q29574",
         "bust of Beatrix": "Q29574"
     },
     "New Zealand": {
@@ -248,7 +260,8 @@
     },
     "Philippines": {
         "Jose Rizal": "Q1500",
-        "Marcelo H. del Pilar": "Q312542"
+        "Marcelo H. del Pilar": "Q312542",
+        "Shield of arms": "Q17201"
     },
     "Poland": {
         "Polish eagle": "Q170496",
@@ -309,6 +322,9 @@
     },
     "Switzerland": {
         "Libertas": "Q1129855"
+    },
+    "Syria": {
+        "Coat of arms of Syria": "Q213037"
     },
     "Thailand": {
         "King Bhumibol Adulyadej": "Q855252",
@@ -461,6 +477,7 @@
         "Eurasian wren": "Q25740",
         "Eurico Gaspar Dutra": "Q296679",
         "Fisher": "Q331432",
+        "Five towers atop arms": "Q114207298",
         "Flavius amphitheatre": "Q10285",
         "Floriano Peixoto": "Q238688",
         "Flying Manchurian crane": "Q1991038",
@@ -477,6 +494,7 @@
         "Globe with sash": "Q328720",
         "Greater Kudu": "Q139487",
         "Guglielmo Marconi": "Q36488",
+        "Guisando Bulls": "Q2454775",
         "Hammer and sickle overlain on globe above sun with rays, all within wreath or sheaf of wheat stalks, star above.": "Q189925",
         "Head of \"Liberty\" facing right ": "Q4483461",
         "Head of Ceres": "Q32102",
@@ -531,6 +549,8 @@
         "Miguel de Cervantes": "Q5682",
         "Mole Antonelliana": "Q201902",
         "Monstera deliciosa": "Q161077",
+        "Monumento al Lobo Marino": "Q6023237",
+        "Mt. Mayon": "Q1484",
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atat\u00fcrk": "Q5152",
         "M\u0101ori koruru": "Q111708972",
@@ -573,7 +593,9 @@
         "Sailing ship": "Q170483",
         "Sailing ship, birds to the left, stars in the sky.": "Q10542",
         "Sam\u00e1n tree": "Q259500",
+        "Schooner 'Kirk B'": "Q114210694",
         "Shield of Peru": "Q4530",
+        "Shield of arms": "Q17201",
         "Ship, denomination below, two dates divided at top.": "Q516239",
         "Somali Pigeon": "Q524321",
         "South African coat of arms": "Q203330",
@@ -582,6 +604,7 @@
         "Soybean": "Q11006",
         "Spanish coat of arms": "Q170600",
         "Sphenodon punctatus": "Q3007063",
+        "St. Esteban church in Segovia": "Q19950092",
         "St. Stephen&#039;s Cathedral": "Q5943",
         "Star with circle on it on pole with sprigs and stalks to left.": "Q188320",
         "Star with wreath in background.": "Q188320",
@@ -605,6 +628,7 @@
         "Trefoil": "Q905612",
         "Tryzub": "Q199433",
         "Tr\u00fcmmerfrau": "Q641166",
+        "Tucuman Building": "Q5364487",
         "Turkish crescent": "Q3592503",
         "Unique Forms in the Continuity of Space": "Q933665",
         "Value and date within wrea": "Q12106",
@@ -622,10 +646,12 @@
         "a crown": "Q170984",
         "a map,": "Q4006",
         "a star with a circle": "Q188320",
+        "active volcano": "Q1330974",
         "allegory of republic": "Q2839015",
         "allegory of the Republic ": "Q4483461",
         "alpine rose": "Q1341190",
         "andean condor": "Q170598",
+        "anvil": "Q104363",
         "armillary sphere": "Q328720",
         "arms of Belgium": "Q199614",
         "arms of Chile": "Q233996",
@@ -643,6 +669,7 @@
         "birds": "Q5113",
         "boat with outrigger": "Q639140",
         "bread fruit": "Q14677",
+        "bust of Beatrix": "Q29574",
         "caravel": "Q169560",
         "caribou": "Q39624",
         "cedar tree": "Q61105",
@@ -661,11 +688,13 @@
         "date palm": "Q25292",
         "destar siga": "Q111709126",
         "dolphin": "Q7369",
+        "draped": "Q5305837",
         "eagle of Saint John": "Q9098119",
         "edelweiss": "Q178265",
         "effigy of liberty": "Q4483461",
         "emblem of Peru": "Q4530",
         "emblem of the State of Israel": "Q184991",
+        "female": "Q467",
         "female figure": "Q467",
         "female head": "Q111475236",
         "figure of Helvetia": "Q15317",
@@ -677,6 +706,8 @@
         "gentian ": "Q16974943",
         "grape": "Q30046",
         "grapes": "Q10978",
+        "grenadine fruits": "Q13222088",
+        "hammer": "Q25294",
         "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808",
         "hibiscus flower": "Q157124",
         "hippocampus coronatus": "Q2219854",
@@ -697,6 +728,7 @@
         "lotus blossom": "Q16528",
         "male head": "Q8441",
         "maple tree": "Q59772474",
+        "menorah": "Q170476",
         "monogram": "Q168346",
         "monogram RI for the Italian Republic": "Q111080490",
         "monogram of King Leopold III": "Q112309554",
@@ -723,6 +755,7 @@
         "ruins of Humait\u00e1": "Q5404163",
         "rye": "Q12099",
         "sailboat": "Q1075310",
+        "schooner": "Q204577",
         "seated figure of Brittania": "Q138396",
         "sello de hacienda": "Q112309286",
         "shield": "Q131559",
@@ -731,6 +764,8 @@
         "soldiers": "Q4991371",
         "sprays,": "Q2923673",
         "sprig": "Q2923673",
+        "statue": "Q179700",
+        "stork": "Q28507",
         "stringed harp": "Q47369",
         "sugar cane": "Q17136949",
         "sulur kacang": "Q111709132",
@@ -744,6 +779,7 @@
         "tree": "Q10884",
         "trident": "Q271628",
         "trireme": "Q208420",
+        "twelve stars of Europe": "Q114163069",
         "two-headed eagle": "Q622964",
         "vanilla": "Q162044",
         "verse of the first national coin": "Q110990558",

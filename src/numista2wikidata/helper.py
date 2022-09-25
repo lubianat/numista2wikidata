@@ -6,6 +6,7 @@ import traceback
 
 import requests
 from wdcuration import add_key, render_qs_url
+from wikidata2df import wikidata2df
 
 from dictionaries.all import DICTS
 import click
@@ -131,14 +132,6 @@ def get_coin_statements(coin_type_id, details=False):
         for script in coin_details["reverse"]["lettering_scripts"]:
             to_print = update_scripts(to_print, ref, script["name"], side="reverse")
 
-    # Parse possible depicts
-    print("=== Obverse ===")
-    print(coin_details["obverse"]["description"])
-    print("=== Reverse ===")
-    print(coin_details["reverse"]["description"])
-
-    country_dict_name = f"depict_{country_name.lower()}"
-
     print(f"Issuer:{country_name} ")
     if country_name in DICTS["depict"]:
         DICTS["depict"]["global"].update(DICTS["depict"][country_name])
@@ -147,7 +140,6 @@ def get_coin_statements(coin_type_id, details=False):
 
         if key.lower() in coin_details["obverse"]["description"].lower():
             to_print = to_print + (f"""LAST|P180|{value}|P518|Q257418{ref}\n""")
-
         if key.lower() in coin_details["reverse"]["description"].lower():
             to_print = to_print + f"""LAST|P180|{value}|P518|Q1542661{ref}\n"""
 
@@ -305,4 +297,38 @@ def add_depict(country_name):
         add_depict(country_name)
 
     else:
+        with open("src/dictionaries/depict.json", "w+") as f:
+            f.write(json.dumps(DICTS["depict"], indent=4, sort_keys=True))
         return 0
+
+
+def check_depicts(country_name, coin_details):
+    if country_name in DICTS["depict"]:
+        DICTS["depict"]["global"].update(DICTS["depict"][country_name])
+
+    # Parse possible depicts
+    print("=== Obverse ===")
+    print(coin_details["obverse"]["description"])
+    print("=== Reverse ===")
+    print(coin_details["reverse"]["description"])
+
+    depicted_qids = []
+    for key, value in DICTS["depict"]["global"].items():
+
+        if key.lower() in coin_details["obverse"]["description"].lower():
+            depicted_qids.append(value)
+        if key.lower() in coin_details["reverse"]["description"].lower():
+            depicted_qids.append(value)
+
+    depicted_qids_with_prefix = [f"wd:{a}" for a in depicted_qids]
+    query = (
+        "    SELECT ?x ?x_label WHERE {"
+        "VALUES ?x {"
+        f'{" ".join(depicted_qids_with_prefix)}'
+        "} . "
+        "?x rdfs:label ?x_label . "
+        'FILTER (LANG (?x_label) = "en")'
+        "}"
+    )
+    df = wikidata2df(query)
+    print(df.drop_duplicates())

@@ -61,8 +61,6 @@ def main():
             print(f"numis get {str(coin_id)}")
             print("==================")
 
-            print(f"https://en.numista.com/catalogue/pieces{coin_id}.html")
-
             get_coin_info(coin_id)
             break
     with open("new_coins.qs", "w") as f:
