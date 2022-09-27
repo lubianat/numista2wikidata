@@ -1,6 +1,7 @@
 """
 Helper functions to parse the numista API and connect to Wikidata.
 """
+from asyncore import write
 import json
 import traceback
 
@@ -10,6 +11,11 @@ from wikidata2df import wikidata2df
 
 from dictionaries.all import DICTS
 import click
+from pathlib import Path
+
+HERE = Path(__file__).parent.resolve()
+DATA = HERE.parent.joinpath("data").resolve()
+DICTS_FOLDER = HERE.parent.joinpath("dictionaries").resolve()
 
 
 def get_coin_statements(coin_type_id, details=False):
@@ -52,8 +58,7 @@ def get_coin_statements(coin_type_id, details=False):
 
     if country_name not in DICTS["issuer"]:
         DICTS["issuer"] = add_key(DICTS["issuer"], country_name)
-        with open("src/dictionaries/issuer.json", "w+") as f:
-            f.write(json.dumps(DICTS["issuer"], indent=4, ensure_ascii=False, sort_keys=True))
+        write_dict("issuer")
 
     country = DICTS["issuer"][coin_details["issuer"]["name"]]
     diameter = coin_details["size"]
@@ -61,8 +66,7 @@ def get_coin_statements(coin_type_id, details=False):
 
     if coin_details["shape"] not in DICTS["shapes"]:
         DICTS["shapes"] = add_key(DICTS["shapes"], coin_details["shape"])
-        with open("src/dictionaries/shapes.json", "w+") as f:
-            f.write(json.dumps(DICTS["shapes"], indent=4, ensure_ascii=False, sort_keys=True))
+        write_dict("shapes")
     shape = DICTS["shapes"][coin_details["shape"]]
 
     try:
@@ -74,8 +78,7 @@ def get_coin_statements(coin_type_id, details=False):
             except Exception:
                 traceback.print_exc()
                 DICTS["mint"] = add_key(DICTS["mint"], mint["name"])
-                with open("src/dictionaries/mint.json", "w+") as f:
-                    f.write(json.dumps(DICTS["mint"], indent=4, ensure_ascii=False, sort_keys=True))
+                write_dict("mint")
                 break
     except Exception:
         traceback.print_exc()
@@ -107,9 +110,7 @@ def get_coin_statements(coin_type_id, details=False):
         else:
             DICTS["series"] = add_key(DICTS["series"], coin_details["series"])
 
-            with open("src/dictionaries/series.json", "w+") as f:
-                f.write(json.dumps(DICTS["series"], indent=4, ensure_ascii=False, sort_keys=True))
-
+            write_dict("series")
     try:
         thickness = coin_details["thickness"]
         to_print = to_print + f"""LAST|P2610|{thickness}U174789{ref}\n"""
@@ -167,9 +168,7 @@ def get_currency_id(currency_name):
     else:
         DICTS["currency"] = add_key(DICTS["currency"], currency_name)
 
-        with open("src/dictionaries/currency.json", "w+") as f:
-            f.write(json.dumps(DICTS["currency"], indent=4, ensure_ascii=False, sort_keys=True))
-
+        write_dict("currency")
         currency = get_currency_id(currency_name)
 
     return currency
@@ -207,13 +206,12 @@ def get_material_id(ref, metal_name):
         print(render_qs_url(metal_qs))
         DICTS["composition"] = add_key(DICTS["composition"], metal_name)
 
-        with open("src/dictionaries/composition.json", "w+") as f:
-            f.write(json.dumps(DICTS["composition"], indent=4, ensure_ascii=False, sort_keys=True))
+        write_dict("composition")
         material_id = get_material_id(ref, metal_name)
         return material_id
 
 
-def update_scripts(to_print, ref, script, side="obverse"):
+def update_scripts(to_print, ref, script, side):
     if side == "obverse":
         side_id = "Q257418"
     elif side == "reverse":
@@ -223,11 +221,10 @@ def update_scripts(to_print, ref, script, side="obverse"):
         side_id = "Q257418"
         to_print = to_print + f"""LAST|P9302|{script_qid}|P518|{side_id}{ref}\n"""
     else:
-        DICTS["engraver"] = add_key(DICTS["scripts"], script)
+        DICTS["scripts"] = add_key(DICTS["scripts"], script)
 
-        with open("src/dictionaries/scripts.json", "w+") as f:
-            f.write(json.dumps(DICTS["scripts"], indent=4, ensure_ascii=False, sort_keys=True))
-        to_print = update_scripts(to_print, ref, script, side="obverse")
+        write_dict("scripts")
+        to_print = update_scripts(to_print, ref, script, side=side)
 
     return to_print
 
@@ -251,8 +248,7 @@ def update_engraver(to_print, ref, engraver, side="obverse"):
         print(render_qs_url(qs))
         DICTS["engraver"] = add_key(DICTS["engraver"], engraver)
 
-        with open("src/dictionaries/engraver.json", "w+") as f:
-            f.write(json.dumps(DICTS["engraver"], indent=4, ensure_ascii=False, sort_keys=True))
+        write_dict("engraver")
         to_print = update_engraver(to_print, ref, engraver, side="obverse")
 
     return to_print
@@ -297,8 +293,8 @@ def add_depict(country_name):
         add_depict(country_name)
 
     else:
-        with open("src/dictionaries/depict.json", "w+") as f:
-            f.write(json.dumps(DICTS["depict"], indent=4, sort_keys=True))
+        write_dict("depict")
+
         return 0
 
 
@@ -332,3 +328,8 @@ def check_depicts(country_name, coin_details):
     )
     df = wikidata2df(query)
     print(df.drop_duplicates())
+
+
+def write_dict(name):
+    dict_as_string = json.dumps(DICTS[name], indent=4, ensure_ascii=False, sort_keys=True)
+    DICTS_FOLDER.joinpath(f"{name}.json").write_text(dict_as_string, encoding="UTF-8")
