@@ -4,7 +4,8 @@
     },
     "Argentina": {
         "Monumento al Lobo Marino": "Q6023237",
-        "Tucuman Building": "Q5364487"
+        "Tucuman Building": "Q5364487",
+        "arms of Argentina": "Q199858"
     },
     "Austria": {
         "Austria coat of arms": "Q160322",
@@ -57,7 +58,6 @@
         "Marajoara": "Q16494170",
         "Marshall Luiz Alves de Lima": "Q712089",
         "Martim Affonso da Sousa": "Q704141",
-        "National arms": "Q188320",
         "Oswaldo Gonçalves Cruz": "Q979554",
         "Padre José de Anchieta": "Q317126",
         "Phrygian capped Liberty Head": "Q4483461",
@@ -126,6 +126,10 @@
     "Denmark": {
         "heart": "Q1615029"
     },
+    "Dominican Republic": {
+        "Francisco del Rosario Sánchez": "Q2397833",
+        "coat of arms of the Dominican Republic": "Q271201"
+    },
     "Ecuador": {
         "coat of arms": "Q244988"
     },
@@ -145,6 +149,9 @@
         "Marianne": "Q325956",
         "rooster": "Q2488240",
         "the Sower": "Q739085"
+    },
+    "French Polynesia": {
+        "Moorea Harbour": "Q114252462"
     },
     "German Democratic Republic": {
         "State emblem of the German Democratic Republic": "Q48168"
@@ -214,6 +221,9 @@
     "Luxembourg": {
         "His Royal Highness Grand Duke Henri": "Q16004"
     },
+    "Malawi": {
+        "Coat of Arms": "Q242909"
+    },
     "Malaysia": {
         "Congkak": "Q473986",
         "Rebana": "Q3181140",
@@ -227,6 +237,7 @@
         "Seewoosagur Ramgoolam": "Q2166580"
     },
     "Mexico": {
+        "Coat of arms": "Q170867",
         "Josefa Ortiz de Domínguez": "Q462142",
         "National Arms": "Q170867"
     },
@@ -263,6 +274,7 @@
         "sello de hacienda": "Q112309286"
     },
     "Peru": {
+        "Coat of arms": "Q4530",
         "Miguel Grau": "Q736578",
         "Shield of Peru": "Q4530",
         "arms of Peru": "Q4530",
@@ -435,6 +447,7 @@
         "Arms of Colombia": "Q235826",
         "Arms of South Africa with the motto &quot;Ex Unitate Vires&quot;": "Q28134642",
         "Artigas": "Q252847",
+        "Ashoka Pillar Lion Capitol": "Q3595955",
         "Ashoka lion": "Q3595955",
         "Atatûrk": "Q5152",
         "Austrian coat of arms": "Q160322",
@@ -499,6 +512,7 @@
         "Flying Manchurian crane": "Q1991038",
         "Frailejón": "Q15596502",
         "Francisco Franco": "Q29179",
+        "Gaelic harp": "Q1288250",
         "Garcinia sessilis": "Q15391104",
         "Gaucho": "Q210377",
         "General Garay": "Q2883544",
@@ -508,6 +522,7 @@
         "German eagle": "Q111080575",
         "Getúlio Dornelles Vargas": "Q156844",
         "Globe with sash": "Q328720",
+        "Golden Hind": "Q546198",
         "Greater Kudu": "Q139487",
         "Guglielmo Marconi": "Q36488",
         "Guisando Bulls": "Q2454775",
@@ -519,6 +534,7 @@
         "Hibiscus rosa-sinensis": "Q159534",
         "His Royal Highness Grand Duke Henri": "Q16004",
         "Iris variegata": "Q164360",
+        "Irish Wolfhound": "Q38668",
         "Jan van Riebeeck ": "Q294769",
         "Jasminum sambac": "Q1356614",
         "Jawaharlal Nehru": "Q1047",
@@ -527,6 +543,7 @@
         "Joaquim Marques Lisboa": "Q1791248",
         "Jose Enrique Rodo": "Q734054",
         "Jose Rizal": "Q1500",
+        "Josefa Ortiz de Domínguez": "Q462142",
         "José Bonifácio de Andrada e Silva": "Q379631",
         "Juan Carlos I": "Q19943",
         "Kaibauk": "Q1721383",
@@ -570,11 +587,10 @@
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atatürk": "Q5152",
         "Māori koruru": "Q111708972",
+        "National Arms": "Q170867",
+        "National Flower": "Q162849",
         "National Heroes Pantheon": "Q3500546",
-        "National arms": "Q188320",
         "Nautilus": "Q1324463",
-        "New coat of arms": "Q203330",
-        "New national coat of arms": "Q203330",
         "Opishocomus hoazin": "-",
         "Opisthocomus hoazin": "Q188660",
         "Orange blosso": "Q3355098",
@@ -586,6 +602,7 @@
         "Passiflora": "Q161185",
         "Pedro Alvares Cabral": "Q174432",
         "Peony blossom": "Q163076",
+        "Phrygian cap": "Q213240",
         "Phrygian capped Liberty Head": "Q4483461",
         "Piazza del Campidoglio": "Q34925",
         "Pithecophaga jefferyi": "Q185213",
@@ -606,6 +623,7 @@
         "Rebana": "Q3181140",
         "Rhinoceros": "Q134657",
         "Rice plant": "Q161426",
+        "Royal Monogram": "Q110990016",
         "Royal Protea": "Q1930962",
         "Ruy Barbosa": "Q916935",
         "Sailing ship": "Q170483",
@@ -642,6 +660,8 @@
         "The Coat of Arms of the Republic of Brazil": "Q188320",
         "The national arms of Mexico": "Q170867",
         "Theobroma cacao": "Q42385",
+        "Tilapia": "Q1770703",
+        "Titicaca water frog": "Q1628083",
         "Tobias Barreto de Meneses": "Q5258787",
         "Topographical map": "Q216526",
         "Topographical map of Brazil": "Q110996871",
@@ -656,6 +676,7 @@
         "Value and date within wreat": "Q26006",
         "Value and date within wreath": "Q3592503",
         "Velebit degenia": "Q2716037",
+        "Vitruvian Man": "Q215486",
         "Vittorio Emanuele III": "Q150642",
         "Vltava river": "Q131574",
         "Volodymyr the Great": "Q14974",
@@ -755,6 +776,7 @@
         "male head": "Q8441",
         "maple tree": "Q59772474",
         "menorah": "Q170476",
+        "miner": "Q820037",
         "monogram": "Q168346",
         "monogram RI for the Italian Republic": "Q111080490",
         "monogram of King Leopold III": "Q112309554",

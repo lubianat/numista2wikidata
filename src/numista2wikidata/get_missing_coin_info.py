@@ -47,7 +47,10 @@ def main():
     coin_ids = []
     for coin in collected_coins:
         try:
+            if coin["coin"]["category"] == "exonumia":
+                continue
             coin_ids.append(str(coin["coin"]["id"]))
+
         except:
             print(coin)
             break

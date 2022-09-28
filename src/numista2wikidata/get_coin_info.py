@@ -27,6 +27,9 @@ def get_coin_info(coin_type_id, details=False):
     print(f"https://en.numista.com/catalogue/pieces{coin_type_id}.html")
 
     coin_details = get_details(coin_type_id)
+    if coin_details["category"] == "exonumia":
+        print("Exonumia, quitting")
+        quit()
     country_name = coin_details["issuer"]["name"]
     print(country_name)
     print("===== Depicts =====")
