@@ -67,6 +67,7 @@
     "Copper-nickel (75% copper, 25% nickel)": "Q110944558",
     "Copper-nickel (75% copper, 25% nickel, non-magnetic)": "Q110944558",
     "Copper-nickel (Copper 92%, nickel 8%)": "Q114210275",
+    "Copper-nickel (Cu 75 Ni 25)": "Q110944558",
     "Copper-nickel (Cu750 Ni250)": "Q110944558",
     "Copper-nickel (non-magnetic)": "Q649090",
     "Copper-nickel clad copper": "Q753",
@@ -97,6 +98,8 @@
     "Nordic gold": "Q112260",
     "Nordic gold (89% Copper, 5% Aluminium, 5% Zinc, 1% Tin)": "Q112260",
     "Plated steel (brass and copper plated)": "Q111679211",
+    "Silver (.100)": "Q114267198",
+    "Silver (.500)": "Q114267129",
     "Silver (.900)": "Q110861802",
     "Stainless steel": "Q172587",
     "Zinc": "Q758"

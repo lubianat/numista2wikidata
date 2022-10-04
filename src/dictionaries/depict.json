@@ -22,6 +22,7 @@
         "monogram of King Leopold III": "Q112309554"
     },
     "Bolivia": {
+        "Emblem of Bolivia": "Q207785",
         "National arms": "Q207785"
     },
     "Brazil": {
@@ -109,6 +110,7 @@
         "arms of Croatia": "Q184252"
     },
     "Cuba": {
+        "José Julián Martí Pérez": "Q103285",
         "cuban coat of arms": "Q242912"
     },
     "Cyprus": {
@@ -238,6 +240,7 @@
     },
     "Mexico": {
         "Coat of arms": "Q170867",
+        "Jose Morelos": "Q378420",
         "Josefa Ortiz de Domínguez": "Q462142",
         "National Arms": "Q170867"
     },
@@ -262,6 +265,10 @@
     },
     "Norway": {
         "Olav V": "Q154912"
+    },
+    "Pakistan": {
+        "Hazrat Lal Shahbaz Qalandar Mausoleum": "Q28793115",
+        "Mohammad Ali Jinnah": "Q160554"
     },
     "Papua New Guinea": {
         "Coat of Arms of Papua New Guinea": "Q274170"
@@ -381,7 +388,10 @@
     },
     "United Kingdom": {
         " Queen Victoria": "Q9439",
+        "Britannia": "Q138396",
+        "King George V": "Q269412",
         "King George VI ": "Q280856",
+        "Union flag": "Q83278",
         "badge of the Prince of Wales": "Q2899400",
         "badge of the Prince of Whales": "Q2899400",
         "seated figure of Brittania": "Q138396",
@@ -431,6 +441,7 @@
         " twig ": "Q11162356",
         " water ": "Q283",
         "2nd portrait of Queen Elizabeth II": "Q112441940",
+        "4th effigie in right profile of Her Majesty, Queen Elizabeth II": "Q114251940",
         "A gazelle above the date": "Q11575",
         "A globe": "Q2",
         "Abraham Lincoln": "Q91",
@@ -496,6 +507,7 @@
         "Dianthus caryophyllus": "Q158984",
         "Diogo Antônio Feijó": "Q1791593",
         "Don Quixote": "Q944201",
+        "Double-headed axe": "Q114394114",
         "Duke of Caxias": "Q712089",
         "Effigy of the Liberty": "Q4483461",
         "Effigy of the Republic": "Q4483461",
@@ -566,6 +578,7 @@
         "Léopold II ": "Q12967",
         "Madara horseman": "Q319296",
         "Mahatma Gandhi": "Q1001",
+        "Man on horse": "Q179226",
         "Manchurian crane": "Q232906",
         "Map ": "Q4006",
         "Map of Country": "Q110996876",
@@ -587,8 +600,6 @@
         "Mud crab": "Q3544834",
         "Mustafa Kemal Atatürk": "Q5152",
         "Māori koruru": "Q111708972",
-        "National Arms": "Q170867",
-        "National Flower": "Q162849",
         "National Heroes Pantheon": "Q3500546",
         "Nautilus": "Q1324463",
         "Opishocomus hoazin": "-",
@@ -616,6 +627,7 @@
         "Puma concolor": "Q35255",
         "Puma concolor cabrerae": "Q9064708",
         "Pygoscelis papua": "Q213021",
+        "Queen Beatrix": "Q29574",
         "Queen Elizabeth II ": "Q9682",
         "Queen Juliana": "Q154946",
         "Radiant sun with face.": "Q1047667",
@@ -696,6 +708,7 @@
         "andean condor": "Q170598",
         "anvil": "Q104363",
         "armillary sphere": "Q328720",
+        "arms of Argentina": "Q199858",
         "arms of Belgium": "Q199614",
         "arms of Bulgaria": "Q173163",
         "arms of Chile": "Q233996",
@@ -760,6 +773,7 @@
         "horse": "Q726",
         "horseback": "Q179226",
         "jug": "Q2413314",
+        "lance": "Q2003053",
         "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
         "laurel wreath": "Q734844",
         "laurels": "Q26006",
