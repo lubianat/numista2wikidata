@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import click
-
 from SPARQLWrapper import JSON, SPARQLWrapper
 
 from dictionaries.all import *
+from numista2wikidata.get_coin_info import get_coin_info
 from numista2wikidata.helper import *
 from numista2wikidata.login_info import *
-from numista2wikidata.get_coin_info import get_coin_info
 
 
 @click.command(name="random")

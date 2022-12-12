@@ -1,17 +1,17 @@
 """
 Helper functions to parse the numista API and connect to Wikidata.
 """
-from asyncore import write
 import json
 import traceback
+from asyncore import write
+from pathlib import Path
 
+import click
 import requests
 from wdcuration import add_key, render_qs_url
 from wikidata2df import wikidata2df
 
 from dictionaries.all import DICTS
-import click
-from pathlib import Path
 
 HERE = Path(__file__).parent.resolve()
 DATA = HERE.parent.joinpath("data").resolve()

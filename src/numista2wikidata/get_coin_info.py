@@ -3,14 +3,14 @@
 Generates a Quickstaments command to create a particular coin type on Wikidata.
 """
 import json
-from tabnanny import verbose
 import webbrowser
+from tabnanny import verbose
 
 import click
 from wdcuration.wdcuration import render_qs_url
 
 from dictionaries.all import DICTS
-from numista2wikidata.helper import get_coin_statements, get_details, add_depict, check_depicts
+from numista2wikidata.helper import add_depict, check_depicts, get_coin_statements, get_details
 
 
 @click.command(name="get")
