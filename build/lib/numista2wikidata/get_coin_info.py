@@ -7,7 +7,7 @@ import webbrowser
 from tabnanny import verbose
 
 import click
-from wdcuration import render_qs_url
+from wdcuration.wdcuration import render_qs_url
 
 from dictionaries.all import DICTS
 from numista2wikidata.helper import add_depict, check_depicts, get_coin_statements, get_details

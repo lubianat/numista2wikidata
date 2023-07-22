@@ -14,3 +14,9 @@ Code to connect the numista database to Wikidata.
 Issuers and Engravers dictionary uses proprietary reconciliation by Xavier (numista) and thus are _not_ openly licensed. 
 
 All other content is available in CC0. 
+
+## Usage 
+
+Instal package in edit mode: 
+
+` pip install -e .`

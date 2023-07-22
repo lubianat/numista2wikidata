@@ -72,6 +72,7 @@ def get_coin_statements(coin_type_id, details=False):
     try:
         mints = []
         for mint in coin_details["mints"]:
+
             try:
                 mints.append(DICTS["mint"][mint["name"]])
             except Exception:
@@ -137,6 +138,7 @@ def get_coin_statements(coin_type_id, details=False):
         DICTS["depict"]["global"].update(DICTS["depict"][country_name])
 
     for key, value in DICTS["depict"]["global"].items():
+
         if key.lower() in coin_details["obverse"]["description"].lower():
             to_print = to_print + (f"""LAST|P180|{value}|P518|Q257418{ref}\n""")
         if key.lower() in coin_details["reverse"]["description"].lower():
@@ -145,6 +147,7 @@ def get_coin_statements(coin_type_id, details=False):
     # Parse possible languages
 
     for key, value in DICTS["language"].items():
+
         if key.lower() in coin_details["obverse"]["description"].lower():
             to_print = to_print + (f"""LAST|P407|{value}|P518|Q257418{ref}\n""")
 
@@ -227,6 +230,7 @@ def update_scripts(to_print, ref, script, side):
 
 
 def update_engraver(to_print, ref, engraver, side="obverse"):
+
     if side == "obverse":
         side_id = "Q257418"
     elif side == "reverse":
@@ -306,6 +310,7 @@ def check_depicts(country_name, coin_details):
 
     depicted_qids = []
     for key, value in DICTS["depict"]["global"].items():
+
         if key.lower() in coin_details["obverse"]["description"].lower():
             depicted_qids.append(value)
         if key.lower() in coin_details["reverse"]["description"].lower():

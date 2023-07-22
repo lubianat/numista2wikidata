@@ -88,6 +88,15 @@
     "Bulgaria": {
         "arms of Bulgaria": "Q173163"
     },
+    "Canada": {
+        "Hymn to Freedom": "Q11976322",
+        "Klondike Gold Rush": "Q631489",
+        "Kàa Goox": "Q3892534",
+        "Shaaw Tlàa": "Q3892577",
+        "Stanley Cup": "Q211872",
+        "Ëdhä Dädhëchą": "Q120736239",
+        "“Skookum” Jim Mason": "Q981428"
+    },
     "Cayman Islands": {
         "Schooner 'Kirk B'": "Q114210694"
     },
@@ -411,6 +420,10 @@
         "National Flower": "Q162849",
         "coat of arms": "Q208656"
     },
+    "Uzbekistan": {
+        "National Coat of Arms": "Q487081",
+        "Sher-Dor Madrasah": "Q2278212"
+    },
     "Western African States": {
         "A gazelle above the date": "Q11575",
         "Emblem of Central Bank of West African States": "Q111294347",
@@ -471,6 +484,7 @@
         "Belvedere Palace": "Q211818",
         "Bernardino Caballero": "Q738679",
         "Bird-of-Paradise": "Q147888",
+        "Bluenose": "Q886009",
         "Bohor Reedbuck": "Q548442",
         "Brandenburg Gate": "Q82425",
         "Bust of a woman representing the Republic": "Q4483461",
@@ -545,6 +559,7 @@
         "Her Majesty, Queen Elizabeth II": "Q9682",
         "Hibiscus rosa-sinensis": "Q159534",
         "His Royal Highness Grand Duke Henri": "Q16004",
+        "Hymn to Freedom": "Q11976322",
         "Iris variegata": "Q164360",
         "Irish Wolfhound": "Q38668",
         "Jan van Riebeeck ": "Q294769",
@@ -563,6 +578,8 @@
         "King Albert II ": "Q3911",
         "King Bhumibol Adulyadej": "Q855252",
         "King George VI ": "Q280856",
+        "Klondike Gold Rush": "Q631489",
+        "Kàa Goox": "Q3892534",
         "Laureate head": "Q40794959",
         "Laureate liberty bust": "Q4483461",
         "Laurel": "Q26006",
@@ -607,6 +624,7 @@
         "Orange blosso": "Q3355098",
         "Orange blossom": "Q1152711",
         "Ornithoptera paradisea": "Q1756827",
+        "Oscar Peterson": "Q105349",
         "Oswaldo Gonçalves Cruz": "Q979554",
         "Padre José de Anchieta": "Q317126",
         "Palm tree with seven leaves and two baskets with dates": "Q25292",
@@ -618,6 +636,7 @@
         "Piazza del Campidoglio": "Q34925",
         "Pithecophaga jefferyi": "Q185213",
         "Platypus": "Q15343",
+        "Polar bear": "Q33609",
         "Polish eagle": "Q170496",
         "Porch of Revellín": "Q6032863",
         "Portrait of Liberty facing right": "Q4483461",
@@ -628,6 +647,7 @@
         "Puma concolor cabrerae": "Q9064708",
         "Pygoscelis papua": "Q213021",
         "Queen Beatrix": "Q29574",
+        "Queen Elizabeth II": "Q9682",
         "Queen Elizabeth II ": "Q9682",
         "Queen Juliana": "Q154946",
         "Radiant sun with face.": "Q1047667",
@@ -643,6 +663,7 @@
         "Samán tree": "Q259500",
         "Savoy Shield": "Q2862388",
         "Schooner 'Kirk B'": "Q114210694",
+        "Shaaw Tlàa": "Q3892577",
         "Shield of Peru": "Q4530",
         "Shield of arms": "Q17201",
         "Shikhara mudra": "Q114081704",
@@ -657,6 +678,7 @@
         "Sphenodon punctatus": "Q3007063",
         "St. Esteban church in Segovia": "Q19950092",
         "St. Stephen&#039;s Cathedral": "Q5943",
+        "Stanley Cup": "Q211872",
         "Star with circle on it on pole with sprigs and stalks to left.": "Q188320",
         "Star with wreath in background.": "Q188320",
         "Stars at center surrounded by circle of stars.": "Q10542",
@@ -769,9 +791,11 @@
         "hetman of Ukraine Bogdan Khmelnitsky ": "Q203808",
         "hibiscus flower": "Q157124",
         "hippocampus coronatus": "Q2219854",
+        "hockey player": "Q11774891",
         "holy tree of Guacari": "Q111709186",
         "horse": "Q726",
         "horseback": "Q179226",
+        "ice flow": "Q368930",
         "jug": "Q2413314",
         "lance": "Q2003053",
         "laureate 1st effigie in right profile of Her Majesty, Queen Elizabeth II": "Q111013042",
@@ -808,6 +832,7 @@
         "ornamental wreath": "Q16494170",
         "paddy": "Q161426",
         "palm tree": "Q14080",
+        "piano": "Q5994",
         "quill": "Q4063215",
         "radiant sun": "Q875322",
         "radio wave": "Q4262",
@@ -853,6 +878,8 @@
         "wheatear": "Q107563349",
         "windmill": "Q38720",
         "woman": "Q467",
-        "wreath": "Q1201922"
+        "wreath": "Q1201922",
+        "Ëdhä Dädhëchą": "Q120736239",
+        "“Skookum” Jim Mason": "Q981428"
     }
 }
