@@ -1,10 +1,12 @@
 {
-  "Arabic": "Q1828555",
-  "Braille": "Q79894",
-  "Cyrillic": "Q8209",
-  "Ge'ez": "Q257634",
-  "Georgian": "Q161428",
-  "Hebrew": "Q33513",
-  "Latin": "Q8229",
-  "Latin (Gaelic)": "Q1432616"
+    "Arabic": "Q1828555",
+    "Braille": "Q79894",
+    "Chinese": "Q11059241",
+    "Cyrillic": "Q8209",
+    "Ge'ez": "Q257634",
+    "Georgian": "Q161428",
+    "Hebrew": "Q33513",
+    "Latin": "Q8229",
+    "Latin (Gaelic)": "Q1432616",
+    "Tamil": "Q26803"
 }
